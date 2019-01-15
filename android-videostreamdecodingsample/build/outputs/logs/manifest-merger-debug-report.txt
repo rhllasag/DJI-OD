@@ -1,0 +1,321 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:2:1-64:12
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\76684e4b1d1ddf14b70909762fd0e134\AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\8f5255f6adbb9c0baa4898066cbfc39c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5a74fa5f207048949b1daf9b3adf2f80\AndroidManifest.xml:17:1-22:12
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:2:1-75:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\f2266def870f7f50a718a2b3beaf0036\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\85b7d4619bf27c0b190aafade8a90cce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\52f245379a652d84f3057e6e664aae43\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\06d520d33da4d76d90af1aed48134337\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\79b2a87125f25077bb77e2338e8614dd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2b9573ada9511cf3ba70064500f46ef9\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\06306b700e9f300da0ecd1fe6f81982f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\91529c1e9129880b9159f6c3cf693b89\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8ba94bc7f2d0b373f9a127c9ecfe47c5\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3f0a8e858e076ac3006eb9989fae9e6b\AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:3:5-48
+	xmlns:tools
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:2:11-57
+	xmlns:android
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:4:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:5-65
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:35:5-66
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:35:5-66
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:22-63
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:21:5-76
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:21:5-76
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:5-67
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:20:5-68
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:22-65
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:5-80
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:17:5-81
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:11:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:13:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:18:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:39:5-76
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:39:5-76
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:14:5-15:47
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:26:5-84
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:26:5-84
+	tools:ignore
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:14:22-81
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:5-80
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:15:5-81
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:22-77
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:5-77
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:23:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:22-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:40:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:40:5-75
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:22-72
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:5-67
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:11:5-68
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:21:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:12:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:21:22-71
+uses-feature#android.hardware.camera
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:5-59
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:24:5-69
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:24:19-67
+uses-feature#android.hardware.usb.host
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:25:5-27:35
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:53:5-55:36
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:53:5-55:36
+	android:required
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:26:9-49
+uses-feature#android.hardware.usb.accessory
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:28:5-30:34
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:56:5-58:35
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:56:5-58:35
+	android:required
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:30:9-32
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:29:9-54
+uses-sdk
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:5-33:41
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\8f5255f6adbb9c0baa4898066cbfc39c\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\8f5255f6adbb9c0baa4898066cbfc39c\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5a74fa5f207048949b1daf9b3adf2f80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5a74fa5f207048949b1daf9b3adf2f80\AndroidManifest.xml:20:5-44
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\f2266def870f7f50a718a2b3beaf0036\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\f2266def870f7f50a718a2b3beaf0036\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\85b7d4619bf27c0b190aafade8a90cce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\85b7d4619bf27c0b190aafade8a90cce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\52f245379a652d84f3057e6e664aae43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\52f245379a652d84f3057e6e664aae43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\06d520d33da4d76d90af1aed48134337\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\06d520d33da4d76d90af1aed48134337\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\79b2a87125f25077bb77e2338e8614dd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\79b2a87125f25077bb77e2338e8614dd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2b9573ada9511cf3ba70064500f46ef9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2b9573ada9511cf3ba70064500f46ef9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\06306b700e9f300da0ecd1fe6f81982f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\06306b700e9f300da0ecd1fe6f81982f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\91529c1e9129880b9159f6c3cf693b89\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\91529c1e9129880b9159f6c3cf693b89\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8ba94bc7f2d0b373f9a127c9ecfe47c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8ba94bc7f2d0b373f9a127c9ecfe47c5\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3f0a8e858e076ac3006eb9989fae9e6b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\3f0a8e858e076ac3006eb9989fae9e6b\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:33:9-38
+	android:minSdkVersion
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:32:9-35
+application
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:34:5-62:19
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\76684e4b1d1ddf14b70909762fd0e134\AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.12.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.12.0.aar\76684e4b1d1ddf14b70909762fd0e134\AndroidManifest.xml:5:5-6:19
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:60:5-73:19
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:60:5-73:19
+	android:supportsRtl
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:39:9-35
+	android:label
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:38:9-41
+	android:icon
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:36:9-43
+	android:allowBackup
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:37:9-35
+	android:theme
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:40:9-40
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:35:9-44
+meta-data#com.dji.sdk.API_KEY
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:42:9-44:55
+	android:value
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:44:13-53
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:43:13-47
+activity#com.dji.videostreamdecodingsample.activities.ConnectionActivity
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:46:9-57:20
+	android:screenOrientation
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:48:13-49
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:47:13-58
+intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:49:13-53:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:50:17-68
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:50:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:51:17-76
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:51:27-74
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:52:17-92
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:52:25-90
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:54:13-56:59
+	android:resource
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:56:17-57
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:55:17-82
+activity#com.dji.videostreamdecodingsample.activities.MainActivity
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:58:9-61:83
+	android:screenOrientation
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:59:13-50
+	android:configChanges
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:60:13-59
+	android:theme
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:61:13-71
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:58:19-58
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:14:5-98
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:14:22-95
+uses-permission#android.permission.WRITE_USER_DICTIONARY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:24:22-68
+uses-permission#android.permission.CAMERA
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:25:22-62
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:29:5-81
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:29:22-78
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:30:5-75
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:30:22-72
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:31:5-73
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:31:22-70
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:32:22-76
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:33:5-84
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:33:22-81
+uses-permission#android.permission.READ_LOGS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.GET_TASKS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:38:5-68
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:38:22-65
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:41:5-74
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:41:22-71
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:42:5-71
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:42:22-68
+uses-permission#android.permission.RAISED_THREAD_PRIORITY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:43:5-81
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:43:22-78
+uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:44:5-85
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:44:22-82
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:50:5-74
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:50:22-71
+service#dji.sdk.sdkmanager.DJIGlobalService
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:61:9-63:43
+	android:stopWithTask
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:63:13-40
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:62:13-63
+receiver#dji.logic.receiver.DJIPilotStartupReceiver
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:65:9-72:20
+	android:exported
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:67:13-36
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:66:13-70
+intent-filter#action:name:dji.go3.STARTUP+action:name:dji.go4.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:68:13-71:29
+action#dji.go3.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:69:17-58
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:69:25-55
+action#dji.go4.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:70:17-58
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\1a0832e1cbcbb5069702d7e6f5206f08\AndroidManifest.xml:70:25-55

@@ -15,6 +15,5 @@
 android-videostreamdecodingsample/.externalNativeBuild
 android-videostreamdecodingsample/.idea
 android-videostreamdecodingsample/.gradle
-android-videostreamdecodingsample/app/build
-android-videostreamdecodingsample/build
+android-videostreamdecodingsample/build/intermediates
 android-videostreamdecodingsample/java_pid2792.hprof
