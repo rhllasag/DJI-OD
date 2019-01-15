@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DJI UAVs</string>
+    <string name="title_main_activity">Video Stream and RC</string>
+    <string name="product_information">Product Information</string>
+    <string name="connection_loose">Status: No Product Connected</string>
+    <string name="model_not_available">Model Not Available</string>
+    <string name="wsbridge_ip">WSBridge IP</string>
+</resources>

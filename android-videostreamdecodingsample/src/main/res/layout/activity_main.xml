@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dji.videostreamdecodingsample.activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_title_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_dark">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="@string/title_main_activity"/>
+
+    </RelativeLayout>
+
+    <TextureView
+        android:id="@+id/livestream_preview_ttv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:alpha="50"
+        android:visibility="visible"
+        android:layout_below="@id/main_title_rl"/>
+
+    <SurfaceView
+        android:id="@+id/livestream_preview_sf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_below="@id/main_title_rl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/main_title_rl"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/activity_main_screen_shot"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Transmit" />
+
+        <Button
+            android:id="@+id/activity_main_simulator"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Simulate" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Event"
+            android:textColor="@android:color/background_light" />
+
+        <TextView
+            android:id="@+id/infoip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="IP"
+            android:textColor="@android:color/background_light" />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/main_title_r2"
+        android:layout_alignParentBottom="true"
+        android:layout_height="200dp"
+        android:layout_width="250dp">
+        <ImageView
+            android:id="@+id/imageViewA"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <com.dji.videostreamdecodingsample.recognition.OverlayView
+            android:id="@+id/tracking_overlay"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</RelativeLayout>

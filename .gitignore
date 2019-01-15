@@ -1,0 +1,26 @@
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+/.idea/caches
+/.idea/grandle.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/runConfigurations.xml
+android-videostreamdecodingsample/.externalNativeBuild
+android-videostreamdecodingsample/.idea
+android-videostreamdecodingsample/.gradle
+android-videostreamdecodingsample/app/build
+android-videostreamdecodingsample/build
+<<<<<<< HEAD
+android-videostreamdecodingsample/jni/lib
+=======
+android-videostreamdecodingsample/jni
+>>>>>>> b90c36906e1fcc268877c5dc32656558e31c099f
+android-videostreamdecodingsample/assets
+android-videostreamdecodingsample/java_pid2792.hprof
