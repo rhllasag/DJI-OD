@@ -17,5 +17,6 @@ android-videostreamdecodingsample/.idea
 android-videostreamdecodingsample/.gradle
 android-videostreamdecodingsample/app/build
 android-videostreamdecodingsample/build
-android-videostreamdecodingsample/jni/lib
+android-videostreamdecodingsample/jni/lib/arm64-v8a
+android-videostreamdecodingsample/jni/lib/x86
 android-videostreamdecodingsample/java_pid2792.hprof
