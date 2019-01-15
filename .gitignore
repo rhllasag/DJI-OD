@@ -16,7 +16,6 @@ android-videostreamdecodingsample/.externalNativeBuild
 android-videostreamdecodingsample/.idea
 android-videostreamdecodingsample/.gradle
 android-videostreamdecodingsample/build/intermediates/instant-run-apk
-android-videostreamdecodingsample/build/intermediates/instant-run-resources
 android-videostreamdecodingsample/build/intermediates/sourceFolderJavaResources
 android-videostreamdecodingsample/build/intermediates/transforms
 android-videostreamdecodingsample/java_pid2792.hprof
