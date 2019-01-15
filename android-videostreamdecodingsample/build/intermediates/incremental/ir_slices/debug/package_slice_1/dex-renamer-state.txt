@@ -1,0 +1,4 @@
+#Tue Jan 15 00:33:44 GMT 2019
+base.0=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
+renamed.0=classes.dex
