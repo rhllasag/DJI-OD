@@ -987,6 +987,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
             }
             mFrames =new ByteArrayOutputStream();
             cropCopyBitmap.compress(Bitmap.CompressFormat.JPEG, Constants.qualityBitmaps, mFrames);
+            imViewA.setImageBitmap(cropCopyBitmap);
             outputTimeMS=System.currentTimeMillis();
             timesTampNeeded=outputTimeMS-incomingTimeMs;
             computingDetection = false;
@@ -1009,39 +1010,29 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
         }
     }
     private void saveYuvDataToJPEG(final byte[] yuvFrame, int width, int height){
-      byte[] y = new byte[width * height];
         byte[] u = new byte[width * height / 4];
         byte[] v = new byte[width * height / 4];
         byte[] nu = new byte[width * height / 4]; //
         byte[] nv = new byte[width * height / 4];
-        System.arraycopy(yuvFrame, 0, y, 0, y.length);
         for (int i = 0; i < u.length; i++) {
-            v[i] = yuvFrame[y.length + 2 * i];
-            u[i] = yuvFrame[y.length + 2 * i + 1];
+            v[i] = yuvFrame[width*height + 2 * i];
+            u[i] = yuvFrame[width*height + 2 * i + 1];
         }
         int uvWidth = width / 2;
         int uvHeight = height / 2;
         for (int j = 0; j < uvWidth / 2; j++) {
             for (int i = 0; i < uvHeight / 2; i++) {
-                byte uSample1 = u[i * uvWidth + j];
-                byte uSample2 = u[i * uvWidth + j + uvWidth / 2];
-                byte vSample1 = v[(i + uvHeight / 2) * uvWidth + j];
-                byte vSample2 = v[(i + uvHeight / 2) * uvWidth + j + uvWidth / 2];
-                nu[2 * (i * uvWidth + j)] = uSample1;
-                nu[2 * (i * uvWidth + j) + 1] = uSample1;
-                nu[2 * (i * uvWidth + j) + uvWidth] = uSample2;
-                nu[2 * (i * uvWidth + j) + 1 + uvWidth] = uSample2;
-                nv[2 * (i * uvWidth + j)] = vSample1;
-                nv[2 * (i * uvWidth + j) + 1] = vSample1;
-                nv[2 * (i * uvWidth + j) + uvWidth] = vSample2;
-                nv[2 * (i * uvWidth + j) + 1 + uvWidth] = vSample2;
+                nu[2 * (i * uvWidth + j)] =  nu[2 * (i * uvWidth + j) + 1] =  u[i * uvWidth + j];
+                nu[2 * (i * uvWidth + j) + uvWidth] = nu[2 * (i * uvWidth + j) + 1 + uvWidth] =  u[i * uvWidth + j + uvWidth / 2];
+                nv[2 * (i * uvWidth + j)] =   nv[2 * (i * uvWidth + j) + 1] =   v[(i + uvHeight / 2) * uvWidth + j];
+                nv[2 * (i * uvWidth + j) + uvWidth] =  nv[2 * (i * uvWidth + j) + 1 + uvWidth] =  v[(i + uvHeight / 2) * uvWidth + j + uvWidth / 2];
             }
         }
         final byte[] bytes = new byte[yuvFrame.length];
-        System.arraycopy(y, 0, bytes, 0, y.length);
+        System.arraycopy(yuvFrame, 0, bytes, 0, width*height);
         for (int i = 0; i < u.length; i++) {
-            bytes[y.length + (i * 2)] = nv[i];
-            bytes[y.length + (i * 2) + 1] = nu[i];
+            bytes[width*height + (i * 2)] = nv[i];
+            bytes[width*height + (i * 2) + 1] = nu[i];
         }
 
         final byte[] yuv = new byte[width/Constants.quality * height/Constants.quality * 3 / 2];
