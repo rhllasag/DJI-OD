@@ -99,8 +99,8 @@
         android:layout_width="250dp">
         <ImageView
             android:id="@+id/imageViewA"
-            android:layout_width="200dp"
-            android:layout_height="250dp"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
             android:layout_weight="1"
             android:scaleType="fitXY" />
 
