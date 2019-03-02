@@ -51,12 +51,12 @@ allprojects {
 }
 android {
     compileSdkVersion 27
-    buildToolsVersion '28.0.2'
+    buildToolsVersion '28.0.3'
     if (nativeBuildSystem == 'cmake') {
         defaultConfig {
             applicationId = 'com.dji.videostreamdecodingsample'
-            minSdkVersion 21
-            targetSdkVersion 27
+            minSdkVersion 19
+            targetSdkVersion 26
             multiDexEnabled true
             ndk {
                 abiFilters "${cpuType}"
@@ -134,6 +134,9 @@ android {
         doNotStrip "*/*/libFR.so"
         exclude 'META-INF/rxjava.properties'
     }
+    defaultConfig {
+        minSdkVersion 23
+    }
 }
 
 task buildNativeBazel(type: Exec) {
@@ -191,11 +194,18 @@ dependencies {
     }
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:multidex:1.0.2'
-    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.dji:dji-sdk:4.5.1'
     provided 'com.dji:dji-sdk-provided:4.5.1'
     compile 'com.github.nkzawa:socket.io-client:0.3.0'
     implementation 'com.github.nkzawa:socket.io-client:0.5.2'
+    compile 'com.google.android.gms:play-services-ads:9.2.0'
+    compile 'com.google.android.gms:play-services-auth:9.2.0'
+    //noinspection GradleCompatible
+    compile 'com.google.android.gms:play-services-gcm:9.2.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
     compile('io.socket:socket.io-client:0.8.3') {
         // excluding org.json which is provided by Android
         exclude group: 'org.json', module: 'json'

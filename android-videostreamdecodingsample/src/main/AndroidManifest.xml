@@ -28,9 +28,7 @@
     <uses-feature
         android:name="android.hardware.usb.accessory"
         android:required="true"/>
-    <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="23" />
+    <uses-sdk android:targetSdkVersion="23" />
     <application
         android:name=".main.DJIApplication"
         android:icon="@mipmap/ic_launcher"
@@ -42,6 +40,12 @@
         <meta-data
             android:name="com.dji.sdk.API_KEY"
             android:value="f57398be88c558c30cda4084"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXIV2lQm2-I0AzIxGD52AVBVU4-Nb84Hs" /> //TODO: Enter your Google API Key here
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <activity
             android:name=".activities.ConnectionActivity"

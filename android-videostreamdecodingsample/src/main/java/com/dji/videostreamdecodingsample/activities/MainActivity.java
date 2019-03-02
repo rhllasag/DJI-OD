@@ -13,6 +13,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
@@ -42,6 +43,10 @@ import com.dji.videostreamdecodingsample.recognition.TensorFlowYoloDetector;
 import com.dji.videostreamdecodingsample.services.Server;
 import com.dji.videostreamdecodingsample.tracking.MultiBoxTracker;
 import com.dji.videostreamdecodingsample.utils.ModuleVerificationUtil;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -52,8 +57,11 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import dji.common.battery.BatteryState;
 import dji.common.camera.SettingsDefinitions;
@@ -62,6 +70,10 @@ import dji.common.flightcontroller.FlightControllerState;
 import dji.common.flightcontroller.VisionControlState;
 import dji.common.flightcontroller.VisionDetectionState;
 import dji.common.flightcontroller.simulator.InitializationData;
+import dji.common.mission.waypoint.Waypoint;
+import dji.common.mission.waypoint.WaypointMission;
+import dji.common.mission.waypoint.WaypointMissionFinishedAction;
+import dji.common.mission.waypoint.WaypointMissionHeadingMode;
 import dji.common.model.LocationCoordinate2D;
 import dji.common.product.Model;
 import dji.common.remotecontroller.ChargeRemaining;
@@ -76,13 +88,15 @@ import dji.sdk.codec.DJICodecManager;
 import dji.sdk.flightcontroller.FlightAssistant;
 import dji.sdk.flightcontroller.FlightController;
 import dji.sdk.flightcontroller.Simulator;
+import dji.sdk.mission.waypoint.WaypointMissionOperator;
 import dji.sdk.products.Aircraft;
 import dji.sdk.remotecontroller.RemoteController;
 import dji.thirdparty.afinal.core.AsyncTask;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
-public class MainActivity extends Activity implements DJICodecManager.YuvDataCallback {
+
+public class MainActivity extends Activity implements DJICodecManager.YuvDataCallback,View.OnClickListener, GoogleMap.OnMapClickListener, OnMapReadyCallback {
     /**Delay Sending each frame **/
     public long incomingTimeMs;
     public long outputTimeMS;
@@ -115,6 +129,17 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
     private static final String TAG = MainActivity.class.getSimpleName();
     private SurfaceHolder.Callback surfaceCallback;
     private Handler handler = new Handler();
+
+    @Override
+    public void onMapClick(LatLng latLng) {
+
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+    }
+
     //private Mat tmp;
     private enum DemoType { USE_TEXTURE_VIEW, USE_SURFACE_VIEW, USE_SURFACE_VIEW_DEMO_DECODER}
     private static DemoType demoType = DemoType.USE_TEXTURE_VIEW;
@@ -200,6 +225,20 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
 
     private Runnable postInferenceCallback;
     private Runnable imageConverter;
+    /**
+     * Waypoints mission
+     * **/
+    private GoogleMap gMap;
+    private boolean isAdd = false;
+    private final Map<Integer, Marker> mMarkers = new ConcurrentHashMap<Integer, Marker>();
+    private Marker droneMarker = null;
+    private float altitude = 100.0f;
+    private float mSpeed = 10.0f;
+    private List<Waypoint> waypointList = new ArrayList<>();
+    public static WaypointMission.Builder waypointMissionBuilder;
+    private WaypointMissionOperator instance;
+    private WaypointMissionFinishedAction mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
+    private WaypointMissionHeadingMode mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
     @Override
     protected void onResume() {
         LOGGER.d("onResume " + this);
@@ -427,6 +466,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
         }
         periodicalStateData.setFirstReading(false);
         setContentView(R.layout.activity_main);
+
         initAllKeys();
         initUi();
         Thread cThread = new Thread(new Server(this,handler));
@@ -1136,7 +1176,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
                 public void run() {
                     if (ModuleVerificationUtil.isFlightControllerAvailable()) {
                         flightController =((Aircraft) DJIApplication.getProductInstance()).getFlightController();
-                        if(flightController.getState().isFlying()){
+                        //if(flightController.getState().isFlying()){
                             flightController.setHomeLocation(new LocationCoordinate2D(periodicalStateData.getAircraftLatitude(), periodicalStateData.getAircraftLongitude()), new CommonCallbacks.CompletionCallback() {
                                 @Override
                                 public void onResult(DJIError djiError) {
@@ -1153,7 +1193,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
                                 e.printStackTrace();
                             }
                             socket.emit("newHomeLocation", homeLocation);
-                        }
+                        //}
                     }
                     else {
                         myAwesomeTextView.setText("FlightController not available Landing Go Home");
