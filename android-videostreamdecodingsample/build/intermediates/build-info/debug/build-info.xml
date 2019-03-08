@@ -6,26 +6,23 @@
     density="xhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1551999090321"
+    timestamp="1552021015222"
     token="-3401490903181781406"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3935" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="0" />
     <task
         name="verifier"
-        duration="24" />
+        duration="0" />
 
-    <artifact
-        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
     <artifact
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\instant-run-apk\debug\android-videostreamdecodingsample-debug.apk"
         type="SPLIT_MAIN" />
@@ -42,10 +39,13 @@
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
+        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -62,11 +62,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1551999090321"
+        timestamp="1552021015222"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\instant-run-apk\debug\android-videostreamdecodingsample-debug.apk"
             type="SPLIT_MAIN" />
@@ -83,10 +80,13 @@
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_1.apk"

@@ -43,10 +43,12 @@ import com.dji.videostreamdecodingsample.recognition.TensorFlowYoloDetector;
 import com.dji.videostreamdecodingsample.services.Server;
 import com.dji.videostreamdecodingsample.tracking.MultiBoxTracker;
 import com.dji.videostreamdecodingsample.utils.ModuleVerificationUtil;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -75,6 +77,7 @@ import dji.common.flightcontroller.VisionDetectionState;
 import dji.common.mission.waypoint.Waypoint;
 import dji.common.mission.waypoint.WaypointMission;
 import dji.common.mission.waypoint.WaypointMissionFinishedAction;
+import dji.common.mission.waypoint.WaypointMissionFlightPathMode;
 import dji.common.mission.waypoint.WaypointMissionHeadingMode;
 import dji.common.model.LocationCoordinate2D;
 import dji.common.product.Model;
@@ -92,6 +95,7 @@ import dji.sdk.flightcontroller.Simulator;
 import dji.sdk.mission.waypoint.WaypointMissionOperator;
 import dji.sdk.products.Aircraft;
 import dji.sdk.remotecontroller.RemoteController;
+import dji.sdk.sdkmanager.DJISDKManager;
 import dji.thirdparty.afinal.core.AsyncTask;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -130,25 +134,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
     private SurfaceHolder.Callback surfaceCallback;
     private Handler handler = new Handler();
 
-    @Override
-    public void onMapClick(LatLng latLng) {
-
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        if (gMap == null) {
-            gMap = googleMap;
-            setUpMap();
-        }
-        LatLng shenzhen = new LatLng(-0.3872, -78.507);
-        gMap.addMarker(new MarkerOptions().position(shenzhen).title("Marker in Shenzhen"));
-        gMap.moveCamera(CameraUpdateFactory.newLatLng(shenzhen));
-    }
-
-    private void setUpMap() {
-        gMap.setOnMapClickListener(this);// add the listener for click for amap object
-    }
 
     //private Mat tmp;
     private enum DemoType { USE_TEXTURE_VIEW, USE_SURFACE_VIEW, USE_SURFACE_VIEW_DEMO_DECODER}
@@ -1151,7 +1136,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                             try {
                                 homeLocation.put("latitude",formatLatitude.format(periodicalStateData.getAircraftLatitude()));
                                 homeLocation.put("longitude",formatLongitude.format(periodicalStateData.getAircraftLongitude()));
-                                System.out.println();
+                                updateDroneLocation();
+                                cameraUpdate(); // Locate the drone's place
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -1230,4 +1216,299 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
 
         }
     };
+    /**Waypoints Events **/
+    public Emitter.Listener addWaypointsChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    enableDisableAdd();
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener clearWaypointsChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    gMap.clear();
+                    waypointList.clear();
+                    waypointMissionBuilder.waypointList(waypointList);
+                    updateDroneLocation();
+                    myAwesomeTextView.setText("clearWaypointsChanged");
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener newAltitudeWaypointsChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    myAwesomeTextView.setText("newAltitudeWaypointsChanged");
+
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener newSpeedWaypointsChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mSpeed = 3.0f;
+                    myAwesomeTextView.setText("newSpeedWaypointsChanged");
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener uploadWaypointsMissionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    myAwesomeTextView.setText("uploadWaypointsMissionChanged");
+                    getWaypointMissionOperator().uploadMission(new CommonCallbacks.CompletionCallback() {
+                        @Override
+                        public void onResult(DJIError error) {
+                            if (error == null) {
+                                setResultToToast("Mission upload successfully!");
+                            } else {
+                                setResultToToast("Mission upload failed, error: " + error.getDescription() + " retrying...");
+                                getWaypointMissionOperator().retryUploadMission(null);
+                            }
+                        }
+                    });
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener startWaypointsMissionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    myAwesomeTextView.setText("startWaypointsMissionChanged");
+                    configWayPointMission();
+                    startWaypointMission();
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener endWaypointsMissionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    myAwesomeTextView.setText("endWaypointsMissionChanged");
+                    stopWaypointMission();
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener actionAfterMissionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    /**if (checkedId == R.id.finishNone){
+                        mFinishedAction = WaypointMissionFinishedAction.NO_ACTION;
+                    } else if (checkedId == R.id.finishGoHome){
+                        mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
+                    } else if (checkedId == R.id.finishAutoLanding){
+                        mFinishedAction = WaypointMissionFinishedAction.AUTO_LAND;
+                    } else if (checkedId == R.id.finishToFirst){
+                        mFinishedAction = WaypointMissionFinishedAction.GO_FIRST_WAYPOINT;
+                    }**/
+                    mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
+                    myAwesomeTextView.setText("actionAfterMissionChanged");
+
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener headingChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    /**if (checkedId == R.id.headingNext) {
+                        mHeadingMode = WaypointMissionHeadingMode.AUTO;
+                    } else if (checkedId == R.id.headingInitDirec) {
+                        mHeadingMode = WaypointMissionHeadingMode.USING_INITIAL_DIRECTION;
+                    } else if (checkedId == R.id.headingRC) {
+                        mHeadingMode = WaypointMissionHeadingMode.CONTROL_BY_REMOTE_CONTROLLER;
+                    } else if (checkedId == R.id.headingWP) {
+                        mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
+                    }**/
+                    mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
+                    myAwesomeTextView.setText("headingChanged");
+
+                }
+            });
+
+        }
+    };
+    // Update the drone location based on states from MCU.
+    private void updateDroneLocation(){
+        LatLng pos = new LatLng(periodicalStateData.getAircraftLatitude(), periodicalStateData.getAircraftLongitude());
+        //Create MarkerOptions object
+        final MarkerOptions markerOptions = new MarkerOptions();
+        markerOptions.position(pos);
+        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.aircraft));
+        if (droneMarker != null) {
+            droneMarker.remove();
+        }
+        if (checkGpsCoordination(periodicalStateData.getAircraftLatitude(), periodicalStateData.getAircraftLongitude())) {
+            droneMarker = gMap.addMarker(markerOptions);
+        }
+    }
+    public static boolean checkGpsCoordination(double latitude, double longitude) {
+        return (latitude > -90 && latitude < 90 && longitude > -180 && longitude < 180) && (latitude != 0f && longitude != 0f);
+    }
+    private void cameraUpdate(){
+        LatLng pos = new LatLng(periodicalStateData.getAircraftLatitude(), periodicalStateData.getAircraftLongitude());
+        float zoomlevel = (float) 18.0;
+        CameraUpdate cu = CameraUpdateFactory.newLatLngZoom(pos, zoomlevel);
+        gMap.moveCamera(cu);
+    }
+    @Override
+    public void onMapClick(LatLng point) {
+        if (isAdd == true){
+            markWaypoint(point);
+            Waypoint mWaypoint = new Waypoint(point.latitude, point.longitude, altitude);
+            //Add Waypoints to Waypoint arraylist;
+            if (waypointMissionBuilder != null) {
+                waypointList.add(mWaypoint);
+                waypointMissionBuilder.waypointList(waypointList).waypointCount(waypointList.size());
+            }else
+            {
+                waypointMissionBuilder = new WaypointMission.Builder();
+                waypointList.add(mWaypoint);
+                waypointMissionBuilder.waypointList(waypointList).waypointCount(waypointList.size());
+            }
+        }else{
+            setResultToToast("Cannot Add Waypoint");
+        }
+    }
+    private void markWaypoint(LatLng point){
+        //Create MarkerOptions object
+        MarkerOptions markerOptions = new MarkerOptions();
+        markerOptions.position(point);
+        markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
+        Marker marker = gMap.addMarker(markerOptions);
+        mMarkers.put(mMarkers.size(), marker);
+    }
+    private void setResultToToast(final String string){
+        MainActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(MainActivity.this, string, Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        if (gMap == null) {
+            gMap = googleMap;
+            setUpMap();
+        }
+        LatLng shenzhen = new LatLng(0, 0);
+        gMap.addMarker(new MarkerOptions().position(shenzhen).title("Marker in Africa"));
+        gMap.moveCamera(CameraUpdateFactory.newLatLng(shenzhen));
+    }
+
+    private void setUpMap() {
+        gMap.setOnMapClickListener(this);// add the listener for click for amap object
+    }
+    private void enableDisableAdd(){
+        if (isAdd == false) {
+            isAdd = true;
+            myAwesomeTextView.setText("Exit");
+
+        }else{
+            isAdd = false;
+            myAwesomeTextView.setText("Add");
+
+        }
+    }
+    public WaypointMissionOperator getWaypointMissionOperator() {
+        if (instance == null) {
+            if (DJISDKManager.getInstance().getMissionControl() != null){
+                instance = DJISDKManager.getInstance().getMissionControl().getWaypointMissionOperator();
+            }
+        }
+        return instance;
+    }
+    private void startWaypointMission(){
+        getWaypointMissionOperator().startMission(new CommonCallbacks.CompletionCallback() {
+            @Override
+            public void onResult(DJIError error) {
+                setResultToToast("Mission Start: " + (error == null ? "Successfully" : error.getDescription()));
+            }
+        });
+    }
+    private void configWayPointMission(){
+
+        if (waypointMissionBuilder == null){
+
+            waypointMissionBuilder = new WaypointMission.Builder().finishedAction(mFinishedAction)
+                    .headingMode(mHeadingMode)
+                    .autoFlightSpeed(mSpeed)
+                    .maxFlightSpeed(mSpeed)
+                    .flightPathMode(WaypointMissionFlightPathMode.NORMAL);
+
+        }else
+        {
+            waypointMissionBuilder.finishedAction(mFinishedAction)
+                    .headingMode(mHeadingMode)
+                    .autoFlightSpeed(mSpeed)
+                    .maxFlightSpeed(mSpeed)
+                    .flightPathMode(WaypointMissionFlightPathMode.NORMAL);
+
+        }
+
+        if (waypointMissionBuilder.getWaypointList().size() > 0){
+
+            for (int i=0; i< waypointMissionBuilder.getWaypointList().size(); i++){
+                waypointMissionBuilder.getWaypointList().get(i).altitude = altitude;
+            }
+
+            setResultToToast("Set Waypoint attitude successfully");
+        }
+
+        DJIError error = getWaypointMissionOperator().loadMission(waypointMissionBuilder.build());
+        if (error == null) {
+            setResultToToast("loadWaypoint succeeded");
+        } else {
+            setResultToToast("loadWaypoint failed " + error.getDescription());
+        }
+    }
+    private void stopWaypointMission(){
+        getWaypointMissionOperator().stopMission(new CommonCallbacks.CompletionCallback() {
+            @Override
+            public void onResult(DJIError error) {
+                setResultToToast("Mission Stop: " + (error == null ? "Successfully" : error.getDescription()));
+            }
+        });
+
+    }
 }
