@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:tools="http://schemas.android.com/tools"
     package="com.dji.videostreamdecodingsample"
-          xmlns:android="http://schemas.android.com/apk/res/android">
-
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -28,7 +27,9 @@
     <uses-feature
         android:name="android.hardware.usb.accessory"
         android:required="true"/>
-    <uses-sdk android:targetSdkVersion="23" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
     <application
         android:name=".main.DJIApplication"
         android:icon="@mipmap/ic_launcher"
@@ -42,7 +43,7 @@
             android:value="f57398be88c558c30cda4084"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDXIV2lQm2-I0AzIxGD52AVBVU4-Nb84Hs" /> //TODO: Enter your Google API Key here
+            android:value="AIzaSyCprEWuvYmjDiz0pHfXouQGvNgQPZ5OEOI" /> //TODO: Enter your Google API Key here
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -60,9 +61,8 @@
                 android:resource="@xml/accessory_filter"/>
         </activity>
         <activity android:name=".activities.MainActivity"
-            android:screenOrientation="landscape"
-            android:configChanges="orientation|screenSize"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>

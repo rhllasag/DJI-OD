@@ -1,880 +1,412 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:2:1-68:12
-MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\c8f00c4db2067536f5c8d51922ba27ff\AndroidManifest.xml:2:1-8:12
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d21b703b52fbe44bcfd3f47ea707e8e3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\df731e66b502f52fb10cd7b937e8dcfc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-9.2.0.aar\1fd985c35d600e3d864ff368d3d93e6d\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.2.0.aar\63db435ddb847180fedf29e79fa12d70\AndroidManifest.xml:16:1-20:12
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\c716563ed51b94fc37371722f4f4adaa\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ce583bb409bf916ebc8b46d7cb1c7fcf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:2:1-75:12
-MERGED from [com.google.android.gms:play-services-ads:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-9.2.0.aar\f73e4a003572ef9a1ffc12bb57ae45d5\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:16:1-33:12
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:16:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:16:1-33:12
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.2.0.aar\4f7ff673c022a50441dd67bae1032456\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-auth-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.2.0.aar\cbd9820546dd0b39ef6d9c03080bffd5\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:16:1-25:12
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:16:1-28:12
-MERGED from [com.google.android.gms:play-services-tagmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-9.2.0.aar\a051fcb52be26e171ad8d42a3d647e38\AndroidManifest.xml:16:1-19:12
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:16:1-28:12
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:16:1-31:12
-MERGED from [com.google.firebase:firebase-config:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-config-9.2.0.aar\8066e08c5cb76fba769e4d3d5ea5b1e7\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.2.0.aar\55f5a4e5385c9f443374ab974e12d226\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:16:1-34:12
-MERGED from [com.google.android.gms:play-services-games:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-games-9.2.0.aar\9b854196c19ec8211f4edbf15519d57d\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.2.0.aar\ec9738a9aa2038e08e87d438b00d4eff\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.firebase:firebase-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.2.0.aar\f5d3b15600d8e3f359366cd2220295cc\AndroidManifest.xml:16:1-22:12
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.2.0.aar\739177faa3d968b9c07995e5aefb0755\AndroidManifest.xml:16:1-22:12
-MERGED from [com.google.firebase:firebase-auth-module:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.2.0.aar\958d4fc42776bf8b50ab91f21c5f8e00\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-database:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-9.2.0.aar\5de7366df6671d0a24be62fc4d2a7633\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-database-connection:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.2.0.aar\93daa872cdaf96688fa44624b6a9f3a5\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-storage:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.2.0.aar\032b7a98f7e8510e4234c6cfae21596a\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.firebase:firebase-storage-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.2.0.aar\f78fbb4e09a08984c4bfd2c67c2344f4\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.2.0.aar\d09c35dca4e9a21dda73f55821e86ac0\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.2.0.aar\78abaee2f8015679e751e0652abc550b\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-wallet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wallet-9.2.0.aar\4b38a68b072ae5956ff61f9375d837b0\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.2.0.aar\d3d220236e72148f6859d201ac5c0e44\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-location:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-location-9.2.0.aar\77d31adb725d3d13f78b5b91f0dd709a\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-places:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-places-9.2.0.aar\4e35e8abb80b9f9ec569b395be4b98d3\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:16:1-28:12
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.2.0.aar\6c987c5c19d626e16077f53cef093609\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.2.0.aar\83cb9dc3e9537fda86cad1206e801dea\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.2.0.aar\4af12c857f2bee1de01ac219017aba53\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.2.0.aar\738396fa885a945c51cff0b1b56a8290\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.2.0.aar\5aee4674acf3fa3c5a1527161e3eba36\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.2.0.aar\5f90a1302e7546e3d5baff5e8b93b5b1\AndroidManifest.xml:16:1-20:12
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:16:1-33:12
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:16:1-39:12
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:16:1-42:12
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:16:1-42:12
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:16:1-60:12
-MERGED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.2.0.aar\9ab7c05ea4de4b86db2a8faed12e56d4\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:16:1-26:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8cc53105c7c8747b0a51ed5c9a6ab1ea\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\6641a658aa92ae0680d2f752b0186567\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\93cb1b83169460118f6ec901da2cc532\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0f02f7bef544f25ebdc2a62cbdc29a40\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c04516671ceb2268f2c697582c4675b2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9ef733cfd75dcbffa0a60bb4739422ba\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a7bbc14718f1264230116f4d1d4ec4bc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\07354819c8238974b1cd14bd540cb0dd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e809dc4890a485b6f7deda29f3178758\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23a11528c0408fb4d888ea2fdbf19e2d\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d1a1dfda3bd3eb2588ad8a5dcf6e889f\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\03e7ca31e7f7bd54fb311d36243be372\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f41e27007cc0a46b635a85cf9abf61c3\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\011789cff89c3f8c0c8613eecb80b331\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\164081afb363855b441a36d8c71ff3c6\AndroidManifest.xml:2:1-8:12
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\25b83416e4d174290f6592bd79cf6212\AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\b75500844eab72c3afbfb7f9d552b956\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdc7265ef3dd2645e89421614beae44a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:2:1-75:12
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\d020ab3463ee50dc78e11fd9470dee68\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\16200e8c04da559bc2707dcfcbeeb9f9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\04d7aa418088763d8d1f4fbb511d9434\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0ff108bbeba03bf23d3f6c6fb451bbf2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.1.aar\39db37f7c7ede307560038c46f5069f4\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\eae2f0daa4f62610836b01c644bbc920\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a7c288c15a016ab50db03c18fcb8f6c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\21f75b654c26e6032f53891c6c8be296\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14990a378c629ba9003c989e5e417bd9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\ebc2c1ea4c56761e91a78fdc2d86515a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7c592d89c00a0f9e6185c4a24810fa5b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\135c59795d08d5ea29429835e722750f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.1.aar\95e53c67b3b0215f44be7b4f71318b0c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\e83925045126014b538c209e85d04eb7\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8121d588f37657b58833d4c4796d0ac9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\ec690082165583bbbad3b584fb774a54\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b7207ece658c8f40b4da7624451ad93\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf64acac1fa3c37d2d408ae87ecc1a88\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\224f3c3308c9c23aebc035f3a9b3a543\AndroidManifest.xml:17:1-22:12
 	package
 		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:3:5-48
 	xmlns:tools
 		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:2:11-57
 	xmlns:android
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:4:11-69
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:4:5-63
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:5-65
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:35:5-66
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:35:5-66
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:5:5-65
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:35:5-66
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:35:5-66
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:22-63
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:5:22-63
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:5-66
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:19:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:19:5-67
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:21:5-67
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:5-75
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:21:5-76
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:21:5-76
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:21:5-76
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:21:5-76
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:22-73
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:7:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:5-67
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:20:5-68
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:20:5-68
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:22:5-68
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:22:5-68
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:5-67
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:20:5-68
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:20:5-68
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:22-65
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:8:22-65
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:5-80
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:17:5-81
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:17:5-81
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:5-80
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:17:5-81
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:22-78
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:13:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:11:5-78
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:13:5-79
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:13:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:5:5-79
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:5:5-79
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:20:5-79
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:20:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:18:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:18:5-79
 	android:name
 		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:11:22-76
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:5-78
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:18:5-79
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:18:5-79
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:5-75
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:39:5-76
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:39:5-76
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:39:5-76
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:39:5-76
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:22-73
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:12:22-73
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:14:5-15:47
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:26:5-84
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:26:5-84
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:5-14:47
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:26:5-84
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:26:5-84
 	tools:ignore
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:15:9-44
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:14:9-44
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:14:22-81
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:13:22-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:5-80
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:15:5-81
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:15:5-81
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:15:5-80
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:15:5-81
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:22-78
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:5-79
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:5-79
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:22-77
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:16:22-77
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:5-77
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:23:5-78
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:23:5-78
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:5-77
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:23:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:23:5-78
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:22-75
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:17:22-75
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:5-74
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:40:5-75
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:40:5-75
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:40:5-75
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:40:5-75
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:22-72
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:18:22-72
 uses-permission#android.permission.BLUETOOTH
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:5-67
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:11:5-68
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:11:5-68
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:5-67
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:11:5-68
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:22-65
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:19:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:21:5-74
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:12:5-74
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:12:5-74
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:12:5-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:12:5-74
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:21:22-71
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:20:22-71
 uses-feature#android.hardware.camera
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:5-59
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:22:5-59
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:19-57
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:22:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:24:5-69
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:5-69
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:24:19-67
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:23:19-67
 uses-feature#android.hardware.usb.host
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:25:5-27:35
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:53:5-55:36
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:53:5-55:36
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:24:5-26:35
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:53:5-55:36
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:53:5-55:36
 	android:required
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:27:9-33
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:26:9-33
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:26:9-49
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:25:9-49
 uses-feature#android.hardware.usb.accessory
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:28:5-30:34
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:56:5-58:35
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:56:5-58:35
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:27:5-29:34
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:56:5-58:35
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:56:5-58:35
 	android:required
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:30:9-32
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:29:9-32
 	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:29:9-54
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:28:9-54
+uses-feature#0x00020000
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:30:5-32:35
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:9-41
+	android:required
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:32:9-32
+application
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:33:5-66:19
+MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\164081afb363855b441a36d8c71ff3c6\AndroidManifest.xml:5:5-6:19
+MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\164081afb363855b441a36d8c71ff3c6\AndroidManifest.xml:5:5-6:19
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:60:5-73:19
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:60:5-73:19
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\d020ab3463ee50dc78e11fd9470dee68\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\d020ab3463ee50dc78e11fd9470dee68\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.1.aar\39db37f7c7ede307560038c46f5069f4\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.1.aar\39db37f7c7ede307560038c46f5069f4\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.1.aar\95e53c67b3b0215f44be7b4f71318b0c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.1.aar\95e53c67b3b0215f44be7b4f71318b0c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\e83925045126014b538c209e85d04eb7\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\e83925045126014b538c209e85d04eb7\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\ec690082165583bbbad3b584fb774a54\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\ec690082165583bbbad3b584fb774a54\AndroidManifest.xml:22:5-20
+	android:supportsRtl
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:38:9-35
+	android:label
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:37:9-41
+	android:icon
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:35:9-43
+	android:allowBackup
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:36:9-35
+	android:theme
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:39:9-40
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:34:9-44
+meta-data#com.dji.sdk.API_KEY
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:41:9-43:55
+	android:value
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:43:13-53
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:42:13-47
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:44:9-46:71
+	android:value
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:46:13-68
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:45:13-58
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:47:9-49:69
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:49:13-66
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:48:13-58
+activity#com.dji.videostreamdecodingsample.activities.ConnectionActivity
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:51:9-62:20
+	android:screenOrientation
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:53:13-49
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:52:13-58
+intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:54:13-58:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:55:17-68
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:55:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:56:17-76
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:56:27-74
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:57:17-92
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:57:25-90
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:59:13-61:59
+	android:resource
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:61:17-57
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:60:17-82
+activity#com.dji.videostreamdecodingsample.activities.MainActivity
+ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:63:9-65:71
+	android:screenOrientation
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:64:13-49
+	android:configChanges
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:65:13-59
+	android:name
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:63:19-58
 uses-sdk
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:5-47
-INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:5-47
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d21b703b52fbe44bcfd3f47ea707e8e3\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:multidex:1.0.2] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\d21b703b52fbe44bcfd3f47ea707e8e3\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\df731e66b502f52fb10cd7b937e8dcfc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\df731e66b502f52fb10cd7b937e8dcfc\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-9.2.0.aar\1fd985c35d600e3d864ff368d3d93e6d\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-9.2.0.aar\1fd985c35d600e3d864ff368d3d93e6d\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.2.0.aar\63db435ddb847180fedf29e79fa12d70\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.2.0.aar\63db435ddb847180fedf29e79fa12d70\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\c716563ed51b94fc37371722f4f4adaa\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\c716563ed51b94fc37371722f4f4adaa\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ce583bb409bf916ebc8b46d7cb1c7fcf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\ce583bb409bf916ebc8b46d7cb1c7fcf\AndroidManifest.xml:20:5-44
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:7:5-9:41
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-ads:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-9.2.0.aar\f73e4a003572ef9a1ffc12bb57ae45d5\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-ads:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-9.2.0.aar\f73e4a003572ef9a1ffc12bb57ae45d5\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.2.0.aar\4f7ff673c022a50441dd67bae1032456\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.2.0.aar\4f7ff673c022a50441dd67bae1032456\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-auth-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.2.0.aar\cbd9820546dd0b39ef6d9c03080bffd5\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-9.2.0.aar\cbd9820546dd0b39ef6d9c03080bffd5\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-9.2.0.aar\a051fcb52be26e171ad8d42a3d647e38\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-9.2.0.aar\a051fcb52be26e171ad8d42a3d647e38\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-config:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-config-9.2.0.aar\8066e08c5cb76fba769e4d3d5ea5b1e7\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-config:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-config-9.2.0.aar\8066e08c5cb76fba769e4d3d5ea5b1e7\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.2.0.aar\55f5a4e5385c9f443374ab974e12d226\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.2.0.aar\55f5a4e5385c9f443374ab974e12d226\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:22:5-42
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:22:5-42
-MERGED from [com.google.android.gms:play-services-games:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-games-9.2.0.aar\9b854196c19ec8211f4edbf15519d57d\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-games:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-games-9.2.0.aar\9b854196c19ec8211f4edbf15519d57d\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.2.0.aar\ec9738a9aa2038e08e87d438b00d4eff\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.2.0.aar\ec9738a9aa2038e08e87d438b00d4eff\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.2.0.aar\f5d3b15600d8e3f359366cd2220295cc\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.2.0.aar\f5d3b15600d8e3f359366cd2220295cc\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.2.0.aar\739177faa3d968b9c07995e5aefb0755\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.2.0.aar\739177faa3d968b9c07995e5aefb0755\AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.2.0.aar\958d4fc42776bf8b50ab91f21c5f8e00\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-module-9.2.0.aar\958d4fc42776bf8b50ab91f21c5f8e00\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-9.2.0.aar\5de7366df6671d0a24be62fc4d2a7633\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-9.2.0.aar\5de7366df6671d0a24be62fc4d2a7633\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.2.0.aar\93daa872cdaf96688fa44624b6a9f3a5\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-9.2.0.aar\93daa872cdaf96688fa44624b6a9f3a5\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.2.0.aar\032b7a98f7e8510e4234c6cfae21596a\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-9.2.0.aar\032b7a98f7e8510e4234c6cfae21596a\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.2.0.aar\f78fbb4e09a08984c4bfd2c67c2344f4\AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-9.2.0.aar\f78fbb4e09a08984c4bfd2c67c2344f4\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.2.0.aar\d09c35dca4e9a21dda73f55821e86ac0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.2.0.aar\d09c35dca4e9a21dda73f55821e86ac0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.2.0.aar\78abaee2f8015679e751e0652abc550b\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.2.0.aar\78abaee2f8015679e751e0652abc550b\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-wallet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wallet-9.2.0.aar\4b38a68b072ae5956ff61f9375d837b0\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-wallet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wallet-9.2.0.aar\4b38a68b072ae5956ff61f9375d837b0\AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.2.0.aar\d3d220236e72148f6859d201ac5c0e44\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.2.0.aar\d3d220236e72148f6859d201ac5c0e44\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-location-9.2.0.aar\77d31adb725d3d13f78b5b91f0dd709a\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-location-9.2.0.aar\77d31adb725d3d13f78b5b91f0dd709a\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-places:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-places-9.2.0.aar\4e35e8abb80b9f9ec569b395be4b98d3\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-places:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-places-9.2.0.aar\4e35e8abb80b9f9ec569b395be4b98d3\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:26:5-42
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.2.0.aar\6c987c5c19d626e16077f53cef093609\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.2.0.aar\6c987c5c19d626e16077f53cef093609\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.2.0.aar\83cb9dc3e9537fda86cad1206e801dea\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.2.0.aar\83cb9dc3e9537fda86cad1206e801dea\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.2.0.aar\4af12c857f2bee1de01ac219017aba53\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.2.0.aar\4af12c857f2bee1de01ac219017aba53\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.2.0.aar\738396fa885a945c51cff0b1b56a8290\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.2.0.aar\738396fa885a945c51cff0b1b56a8290\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.2.0.aar\5aee4674acf3fa3c5a1527161e3eba36\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.2.0.aar\5aee4674acf3fa3c5a1527161e3eba36\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.2.0.aar\5f90a1302e7546e3d5baff5e8b93b5b1\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.2.0.aar\5f90a1302e7546e3d5baff5e8b93b5b1\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.2.0.aar\9ab7c05ea4de4b86db2a8faed12e56d4\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.2.0.aar\9ab7c05ea4de4b86db2a8faed12e56d4\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8cc53105c7c8747b0a51ed5c9a6ab1ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\8cc53105c7c8747b0a51ed5c9a6ab1ea\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\6641a658aa92ae0680d2f752b0186567\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\6641a658aa92ae0680d2f752b0186567\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\93cb1b83169460118f6ec901da2cc532\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\93cb1b83169460118f6ec901da2cc532\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0f02f7bef544f25ebdc2a62cbdc29a40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0f02f7bef544f25ebdc2a62cbdc29a40\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c04516671ceb2268f2c697582c4675b2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\c04516671ceb2268f2c697582c4675b2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9ef733cfd75dcbffa0a60bb4739422ba\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\9ef733cfd75dcbffa0a60bb4739422ba\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a7bbc14718f1264230116f4d1d4ec4bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\a7bbc14718f1264230116f4d1d4ec4bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\07354819c8238974b1cd14bd540cb0dd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\07354819c8238974b1cd14bd540cb0dd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e809dc4890a485b6f7deda29f3178758\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e809dc4890a485b6f7deda29f3178758\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23a11528c0408fb4d888ea2fdbf19e2d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\23a11528c0408fb4d888ea2fdbf19e2d\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d1a1dfda3bd3eb2588ad8a5dcf6e889f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d1a1dfda3bd3eb2588ad8a5dcf6e889f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\03e7ca31e7f7bd54fb311d36243be372\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\03e7ca31e7f7bd54fb311d36243be372\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f41e27007cc0a46b635a85cf9abf61c3\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f41e27007cc0a46b635a85cf9abf61c3\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\011789cff89c3f8c0c8613eecb80b331\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\011789cff89c3f8c0c8613eecb80b331\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:5-47
+INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\25b83416e4d174290f6592bd79cf6212\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\25b83416e4d174290f6592bd79cf6212\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\b75500844eab72c3afbfb7f9d552b956\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\b75500844eab72c3afbfb7f9d552b956\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdc7265ef3dd2645e89421614beae44a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\cdc7265ef3dd2645e89421614beae44a\AndroidManifest.xml:20:5-44
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-12.0.1.aar\bb1d2e7efa6373e4e729657648f04315\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\d020ab3463ee50dc78e11fd9470dee68\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-12.0.1.aar\d020ab3463ee50dc78e11fd9470dee68\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-12.0.1.aar\feed25a105af8325a00d236edd214949\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\16200e8c04da559bc2707dcfcbeeb9f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\16200e8c04da559bc2707dcfcbeeb9f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\04d7aa418088763d8d1f4fbb511d9434\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\04d7aa418088763d8d1f4fbb511d9434\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0ff108bbeba03bf23d3f6c6fb451bbf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\0ff108bbeba03bf23d3f6c6fb451bbf2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.1.aar\39db37f7c7ede307560038c46f5069f4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-license-12.0.1.aar\39db37f7c7ede307560038c46f5069f4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\eae2f0daa4f62610836b01c644bbc920\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\eae2f0daa4f62610836b01c644bbc920\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a7c288c15a016ab50db03c18fcb8f6c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\a7c288c15a016ab50db03c18fcb8f6c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\21f75b654c26e6032f53891c6c8be296\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\21f75b654c26e6032f53891c6c8be296\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14990a378c629ba9003c989e5e417bd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\14990a378c629ba9003c989e5e417bd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\ebc2c1ea4c56761e91a78fdc2d86515a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\ebc2c1ea4c56761e91a78fdc2d86515a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7c592d89c00a0f9e6185c4a24810fa5b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7c592d89c00a0f9e6185c4a24810fa5b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\135c59795d08d5ea29429835e722750f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\135c59795d08d5ea29429835e722750f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.1.aar\95e53c67b3b0215f44be7b4f71318b0c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-license-12.0.1.aar\95e53c67b3b0215f44be7b4f71318b0c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\e83925045126014b538c209e85d04eb7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-12.0.1.aar\e83925045126014b538c209e85d04eb7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8121d588f37657b58833d4c4796d0ac9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8121d588f37657b58833d4c4796d0ac9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\ec690082165583bbbad3b584fb774a54\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks-license:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-12.0.1.aar\ec690082165583bbbad3b584fb774a54\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b7207ece658c8f40b4da7624451ad93\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2b7207ece658c8f40b4da7624451ad93\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf64acac1fa3c37d2d408ae87ecc1a88\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\cf64acac1fa3c37d2d408ae87ecc1a88\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\224f3c3308c9c23aebc035f3a9b3a543\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\224f3c3308c9c23aebc035f3a9b3a543\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:15-44
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:9:9-38
 	android:minSdkVersion
 		INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:31:5-47
+		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml
-application
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:32:5-66:19
-MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\c8f00c4db2067536f5c8d51922ba27ff\AndroidManifest.xml:5:5-6:19
-MERGED from [org.tensorflow:tensorflow-android:1.13.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\tensorflow-android-1.13.1.aar\c8f00c4db2067536f5c8d51922ba27ff\AndroidManifest.xml:5:5-6:19
-MERGED from [com.google.android.gms:play-services:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-9.2.0.aar\1fd985c35d600e3d864ff368d3d93e6d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-9.2.0.aar\1fd985c35d600e3d864ff368d3d93e6d\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:5:5-9:19
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:5:5-9:19
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.2.0.aar\63db435ddb847180fedf29e79fa12d70\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-9.2.0.aar\63db435ddb847180fedf29e79fa12d70\AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\c716563ed51b94fc37371722f4f4adaa\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-23.0.0.aar\c716563ed51b94fc37371722f4f4adaa\AndroidManifest.xml:22:5-20
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:60:5-73:19
-MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:60:5-73:19
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.2.0.aar\4f7ff673c022a50441dd67bae1032456\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-9.2.0.aar\4f7ff673c022a50441dd67bae1032456\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-9.2.0.aar\32e9202a54b19badbfc457bd2f2fa5f2\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-9.2.0.aar\bfe52f0bb4f3bbe31ac0db2df43b6fc2\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.firebase:firebase-config:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-config-9.2.0.aar\8066e08c5cb76fba769e4d3d5ea5b1e7\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-config:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-config-9.2.0.aar\8066e08c5cb76fba769e4d3d5ea5b1e7\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.2.0.aar\55f5a4e5385c9f443374ab974e12d226\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-contextmanager-9.2.0.aar\55f5a4e5385c9f443374ab974e12d226\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-games:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-games-9.2.0.aar\9b854196c19ec8211f4edbf15519d57d\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-games:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-games-9.2.0.aar\9b854196c19ec8211f4edbf15519d57d\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.2.0.aar\ec9738a9aa2038e08e87d438b00d4eff\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-drive-9.2.0.aar\ec9738a9aa2038e08e87d438b00d4eff\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.2.0.aar\f5d3b15600d8e3f359366cd2220295cc\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-9.2.0.aar\f5d3b15600d8e3f359366cd2220295cc\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.2.0.aar\739177faa3d968b9c07995e5aefb0755\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-auth-common-9.2.0.aar\739177faa3d968b9c07995e5aefb0755\AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.2.0.aar\d09c35dca4e9a21dda73f55821e86ac0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-fitness-9.2.0.aar\d09c35dca4e9a21dda73f55821e86ac0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.2.0.aar\78abaee2f8015679e751e0652abc550b\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appindexing-9.2.0.aar\78abaee2f8015679e751e0652abc550b\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.2.0.aar\d3d220236e72148f6859d201ac5c0e44\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-identity-9.2.0.aar\d3d220236e72148f6859d201ac5c0e44\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-location:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-location-9.2.0.aar\77d31adb725d3d13f78b5b91f0dd709a\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-location:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-location-9.2.0.aar\77d31adb725d3d13f78b5b91f0dd709a\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-places:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-places-9.2.0.aar\4e35e8abb80b9f9ec569b395be4b98d3\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-places:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-places-9.2.0.aar\4e35e8abb80b9f9ec569b395be4b98d3\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-nearby-9.2.0.aar\c3a6262dcbe04777c6b011947f5f8b23\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.2.0.aar\6c987c5c19d626e16077f53cef093609\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-panorama-9.2.0.aar\6c987c5c19d626e16077f53cef093609\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.2.0.aar\83cb9dc3e9537fda86cad1206e801dea\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-plus-9.2.0.aar\83cb9dc3e9537fda86cad1206e801dea\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.2.0.aar\4af12c857f2bee1de01ac219017aba53\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-9.2.0.aar\4af12c857f2bee1de01ac219017aba53\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.2.0.aar\738396fa885a945c51cff0b1b56a8290\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-vision-9.2.0.aar\738396fa885a945c51cff0b1b56a8290\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.2.0.aar\5aee4674acf3fa3c5a1527161e3eba36\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-wearable-9.2.0.aar\5aee4674acf3fa3c5a1527161e3eba36\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.2.0.aar\5f90a1302e7546e3d5baff5e8b93b5b1\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gass-9.2.0.aar\5f90a1302e7546e3d5baff5e8b93b5b1\AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:24:5-38:19
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:24:5-38:19
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.2.0.aar\9ab7c05ea4de4b86db2a8faed12e56d4\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tasks-9.2.0.aar\9ab7c05ea4de4b86db2a8faed12e56d4\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:20:5-24:19
-	android:supportsRtl
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:37:9-35
-	android:label
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:36:9-41
-	android:icon
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:34:9-43
-	android:allowBackup
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:35:9-35
-	android:theme
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:38:9-40
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:33:9-44
-meta-data#com.dji.sdk.API_KEY
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:40:9-42:55
-	android:value
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:42:13-53
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:41:13-47
-meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:43:9-45:71
-	android:value
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:45:13-68
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:44:13-58
-meta-data#com.google.android.gms.version
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:46:9-48:69
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-basement-9.2.0.aar\7ba8060c74eed7cfbbd40493b98c01b5\AndroidManifest.xml:21:9-23:69
-	android:value
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:48:13-66
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:47:13-58
-activity#com.dji.videostreamdecodingsample.activities.ConnectionActivity
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:50:9-61:20
-	android:screenOrientation
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:52:13-49
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:51:13-58
-intent-filter#action:name:android.hardware.usb.action.USB_ACCESSORY_ATTACHED+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:53:13-57:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:54:17-68
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:54:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:55:17-76
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:55:27-74
-action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:56:17-92
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:56:25-90
-meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:58:13-60:59
-	android:resource
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:60:17-57
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:59:17-82
-activity#com.dji.videostreamdecodingsample.activities.MainActivity
-ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:62:9-65:83
-	android:screenOrientation
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:63:13-50
-	android:configChanges
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:64:13-59
-	android:theme
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:65:13-71
-	android:name
-		ADDED from C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\src\main\AndroidManifest.xml:62:19-58
-receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:6:9-100
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:6:19-97
-service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:7:9-104
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:7:18-101
-service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:8:9-92
-	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-9.2.0.aar\7b41ea6c8446c414173b46c94d936c03\AndroidManifest.xml:8:18-90
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:14:5-98
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:14:5-98
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:14:22-95
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:14:22-95
 uses-permission#android.permission.WRITE_USER_DICTIONARY
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:16:5-80
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:16:5-80
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:16:22-77
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:16:22-77
 uses-permission#android.permission.CHANGE_CONFIGURATION
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:19:5-79
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:19:5-79
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:19:22-76
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:19:22-76
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:22:5-79
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:22:22-76
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:22:22-76
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:24:5-71
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:24:5-71
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:24:22-68
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:24:22-68
 uses-permission#android.permission.CAMERA
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:25:5-65
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:25:5-65
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:25:22-62
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:25:22-62
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:29:5-81
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:29:5-81
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:29:22-78
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:29:22-78
 uses-permission#android.permission.BROADCAST_STICKY
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:30:5-75
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:30:5-75
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:30:22-72
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:30:22-72
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:31:5-73
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:31:5-73
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:31:22-70
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:31:22-70
 uses-permission#android.permission.RECEIVE_USER_PRESENT
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:32:5-79
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:32:22-76
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:32:22-76
 uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:33:5-84
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:33:5-84
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:33:22-81
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:33:22-81
 uses-permission#android.permission.READ_LOGS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:34:5-68
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:34:5-68
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:34:22-65
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:34:22-65
 uses-permission#android.permission.GET_TASKS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:38:5-68
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:38:5-68
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:38:22-65
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:38:22-65
 uses-permission#android.permission.MANAGE_ACCOUNTS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:41:5-74
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:41:5-74
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:41:22-71
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:41:22-71
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:42:5-71
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:42:5-71
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:42:22-68
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:42:22-68
 uses-permission#android.permission.RAISED_THREAD_PRIORITY
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:43:5-81
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:43:5-81
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:43:22-78
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:43:22-78
 uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:44:5-85
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:44:5-85
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:44:22-82
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:44:22-82
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:50:5-74
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:50:5-74
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:50:22-71
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:50:22-71
 service#dji.sdk.sdkmanager.DJIGlobalService
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:61:9-63:43
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:61:9-63:43
 	android:stopWithTask
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:63:13-40
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:63:13-40
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:62:13-63
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:62:13-63
 receiver#dji.logic.receiver.DJIPilotStartupReceiver
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:65:9-72:20
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:65:9-72:20
 	android:exported
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:67:13-36
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:67:13-36
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:66:13-70
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:66:13-70
 intent-filter#action:name:dji.go3.STARTUP+action:name:dji.go4.STARTUP
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:68:13-71:29
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:68:13-71:29
 action#dji.go3.STARTUP
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:69:17-58
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:69:17-58
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:69:25-55
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:69:25-55
 action#dji.go4.STARTUP
-ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:70:17-58
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:70:17-58
 	android:name
-		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\decc524d60efb4138912557b7e58ad66\AndroidManifest.xml:70:25-55
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:21:9-24:46
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:23:19-52
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:24:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:22:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:21:19-68
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:28:9-31:110
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:30:13-36
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:31:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-auth-9.2.0.aar\35fe59b9bdbebe7d81ea95475147bf4d\AndroidManifest.xml:29:13-58
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-iid-9.2.0.aar\4605b3b9bd28aaf4dc6e089aa4473a6f\AndroidManifest.xml:21:5-82
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:23:5-82
-MERGED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:23:5-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-gcm-9.2.0.aar\108e329db824e2b9810e306f82a5956e\AndroidManifest.xml:21:22-79
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:26:9-29:64
-	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:28:13-122
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:29:13-61
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:27:13-65
-activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:30:9-31:52
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:31:13-50
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-9.2.0.aar\8c848dde6610094f034f5f479776f27e\AndroidManifest.xml:30:19-91
-activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:21:9-29:20
-	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:23:17-40
-	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:24:17-63
-	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:22:17-48
-intent-filter#action:name:com.google.android.gms.appinvite.ACTION_PREVIEW+category:name:android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:25:13-28:29
-action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:26:17-89
-	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:26:25-87
-category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:27:17-75
-	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-9.2.0.aar\c21fe0ce44d4bd5cf128da9c943d2937\AndroidManifest.xml:27:27-73
-service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
-ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:26:9-27:50
-	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:27:13-48
-	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:26:18-79
-service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
-ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:29:9-30:50
-	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:30:13-48
-	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-crash-9.2.0.aar\04c683e6c646f98abd5448ac0a08b1c1\AndroidManifest.xml:29:18-77
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:22:5-24:33
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:23:8-40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-maps-9.2.0.aar\dbbcf87c4c346f396fdeb66cacfb72f0\AndroidManifest.xml:24:8-31
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\dji-sdk-4.5.1.aar\e055c5178d94ffd4aee5db0470c4b2f0\AndroidManifest.xml:70:25-55
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:20:9-22:45
+ADDED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:22:19-43
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:21:19-78
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-9.2.0.aar\185d719375dc7c5e1e29aad8190b5146\AndroidManifest.xml:20:19-85
-service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:24:9-30:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:26:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:25:13-82
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:27:13-29:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:27:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:28:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-messaging-9.2.0.aar\cda6a117732296f932a61495db47cfb5\AndroidManifest.xml:28:25-75
-service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:25:9-27:42
-	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:27:17-39
-	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:26:17-41
-	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:25:18-84
-activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:28:9-37:20
-	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:29:13-87
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.${applicationId}
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:31:13-36:29
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.com.dji.videostreamdecodingsample
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:31:13-36:29
-data
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:32:17-72
-	android:scheme
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:32:23-69
-action#android.intent.action.VIEW
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:33:17-69
-	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:33:25-66
-category#android.intent.category.BROWSABLE
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:35:17-77
-	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-9.2.0.aar\8701d835e73a38f8c1555da3e81e3ae6\AndroidManifest.xml:35:27-75
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:28:7-34:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:30:11-33
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:29:11-83
-intent-filter#action:name:com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:31:9-33:25
-action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:32:11-77
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:32:19-75
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-9.2.0.aar\2f6c428186440a53fa70238ad1010f95\AndroidManifest.xml:36:7-39:37
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:38:11-33
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:39:11-35
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-analytics-9.2.0.aar\863cef88fc71d5c9bfbbf3696387c0d0\AndroidManifest.xml:37:11-82
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:25:5-26:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:26:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:25:17-71
-permission#com.dji.videostreamdecodingsample.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:25:5-26:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:26:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:25:17-71
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:28:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:28:22-76
-uses-permission#com.dji.videostreamdecodingsample.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:28:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:28:22-76
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:32:9-41:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:34:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:35:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:33:13-78
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:36:13-40:29
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+action:name:com.google.android.c2dm.intent.REGISTRATION+category:name:com.dji.videostreamdecodingsample
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:36:13-40:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:37:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:37:25-78
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:38:17-86
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:38:25-83
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:39:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:39:27-58
-category#com.dji.videostreamdecodingsample
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:39:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:39:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:45:9-47:40
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:46:13-86
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:51:9-57:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:53:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:52:13-77
-intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:54:13-56:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:54:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:55:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-iid-9.2.0.aar\15e83dcdd0e8a2a3a36742835db16fbc\AndroidManifest.xml:55:25-77
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:7:9-11:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:8:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:10:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:11:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:9.2.0] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\firebase-common-9.2.0.aar\6466aacad27a0085bdb1c902af3bb564\AndroidManifest.xml:9:13-58
+		ADDED from [com.google.android.gms:play-services-base:12.0.1] C:\Users\homer\.gradle\caches\transforms-1\files-1.1\play-services-base-12.0.1.aar\b50d84bdf3f01dd5c360368e83e7272e\AndroidManifest.xml:24:13-79

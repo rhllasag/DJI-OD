@@ -40,7 +40,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
-        classpath 'com.google.gms:google-services:3.2.1'
     }
 }
 allprojects {
@@ -51,12 +50,14 @@ allprojects {
 }
 android {
     compileSdkVersion 27
-    buildToolsVersion '28.0.3'
+    buildToolsVersion '27.0.2'
     if (nativeBuildSystem == 'cmake') {
         defaultConfig {
             applicationId = 'com.dji.videostreamdecodingsample'
-            minSdkVersion 19
-            targetSdkVersion 26
+            minSdkVersion 15
+            targetSdkVersion 27
+            versionCode 1
+            versionName "1.0"
             multiDexEnabled true
             ndk {
                 abiFilters "${cpuType}"
@@ -193,19 +194,19 @@ dependencies {
         compile 'org.tensorflow:tensorflow-android:+'
     }
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:multidex:1.0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    //noinspection GradleCompatible
     compile 'com.android.support:design:27.1.1'
     //noinspection GradleCompatible
-    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:appcompat-v7:27.0.2'
     compile 'com.dji:dji-sdk:4.5.1'
     provided 'com.dji:dji-sdk-provided:4.5.1'
     compile 'com.github.nkzawa:socket.io-client:0.3.0'
     implementation 'com.github.nkzawa:socket.io-client:0.5.2'
-    compile 'com.google.android.gms:play-services-ads:9.2.0'
-    compile 'com.google.android.gms:play-services-auth:9.2.0'
-    //noinspection GradleCompatible
-    compile 'com.google.android.gms:play-services-gcm:9.2.0'
-    compile 'com.google.android.gms:play-services:9.2.0'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    implementation 'com.android.support:support-v4:27.0.2'
+    // Needed for the LiteListDemo
+    implementation "com.android.support:recyclerview-v7:27.0.2"
     compile('io.socket:socket.io-client:0.8.3') {
         // excluding org.json which is provided by Android
         exclude group: 'org.json', module: 'json'

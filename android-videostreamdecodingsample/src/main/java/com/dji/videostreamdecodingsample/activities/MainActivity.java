@@ -13,7 +13,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Size;
 import android.util.TypedValue;
@@ -43,10 +43,13 @@ import com.dji.videostreamdecodingsample.recognition.TensorFlowYoloDetector;
 import com.dji.videostreamdecodingsample.services.Server;
 import com.dji.videostreamdecodingsample.tracking.MultiBoxTracker;
 import com.dji.videostreamdecodingsample.utils.ModuleVerificationUtil;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -69,7 +72,6 @@ import dji.common.error.DJIError;
 import dji.common.flightcontroller.FlightControllerState;
 import dji.common.flightcontroller.VisionControlState;
 import dji.common.flightcontroller.VisionDetectionState;
-import dji.common.flightcontroller.simulator.InitializationData;
 import dji.common.mission.waypoint.Waypoint;
 import dji.common.mission.waypoint.WaypointMission;
 import dji.common.mission.waypoint.WaypointMissionFinishedAction;
@@ -80,7 +82,6 @@ import dji.common.remotecontroller.ChargeRemaining;
 import dji.common.remotecontroller.HardwareState;
 import dji.common.util.CommonCallbacks;
 import dji.keysdk.FlightControllerKey;
-import dji.keysdk.KeyManager;
 import dji.sdk.base.BaseProduct;
 import dji.sdk.camera.Camera;
 import dji.sdk.camera.VideoFeeder;
@@ -96,7 +97,7 @@ import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 
 
-public class MainActivity extends Activity implements DJICodecManager.YuvDataCallback,View.OnClickListener, GoogleMap.OnMapClickListener, OnMapReadyCallback {
+public class MainActivity extends AppCompatActivity implements DJICodecManager.YuvDataCallback,View.OnClickListener, GoogleMap.OnMapClickListener, OnMapReadyCallback {
     /**Delay Sending each frame **/
     public long incomingTimeMs;
     public long outputTimeMS;
@@ -115,14 +116,13 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
     private PeriodicalStateData periodicalStateData;
     private ImageView imViewA;
     /**Views for interface**/
-    public TextView infoip, msg;
+    public TextView infoip;
     public TextView myAwesomeTextView;
     private TextView titleTv;
     private TextureView videostreamPreviewTtView;
     private SurfaceView videostreamPreviewSf;
     private SurfaceHolder videostreamPreviewSh;
     private Button screenShot;
-    private Button simulate;
     private StringBuilder stringBuilder;
     /**Image and Video**/
     private Activity activity=this;
@@ -137,7 +137,17 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        if (gMap == null) {
+            gMap = googleMap;
+            setUpMap();
+        }
+        LatLng shenzhen = new LatLng(-0.3872, -78.507);
+        gMap.addMarker(new MarkerOptions().position(shenzhen).title("Marker in Shenzhen"));
+        gMap.moveCamera(CameraUpdateFactory.newLatLng(shenzhen));
+    }
 
+    private void setUpMap() {
+        gMap.setOnMapClickListener(this);// add the listener for click for amap object
     }
 
     //private Mat tmp;
@@ -253,6 +263,10 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        SupportMapFragment mapFragment =(SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
         DJIApplication app = (DJIApplication) getApplication();
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         socket = app.getSocket();
@@ -261,6 +275,15 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
         socket.on("landingChanged",landingChanged);
         socket.on("returnToHomeChanged",returnToHomeChanged);
         socket.on("homeChanged",homeChanged);
+        socket.on("addWaypointsChanged",addWaypointsChanged);
+        socket.on("clearWaypointsChanged",clearWaypointsChanged);
+        socket.on("newAltitudeWaypointsChanged",newAltitudeWaypointsChanged);
+        socket.on("newSpeedWaypointsChanged",newSpeedWaypointsChanged);
+        socket.on("uploadWaypointsMissionChanged",uploadWaypointsMissionChanged);
+        socket.on("startWaypointsMissionChanged",startWaypointsMissionChanged);
+        socket.on("endWaypointsMissionChanged",endWaypointsMissionChanged);
+        socket.on("actionAfterMissionChanged",actionAfterMissionChanged);
+        socket.on("headingChanged",headingChanged);
         socket.connect();
         periodicalStateData = new PeriodicalStateData();
         periodicalStateData.setFirstReading(true);
@@ -465,13 +488,11 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
             socket.emit("newFlightTime", flightTime);
         }
         periodicalStateData.setFirstReading(false);
-        setContentView(R.layout.activity_main);
-
         initAllKeys();
         initUi();
+
         Thread cThread = new Thread(new Server(this,handler));
         cThread.start();
-        super.onCreate(savedInstanceState);
     }
     private void initSurfaceOrTextureView(){
         switch (demoType) {
@@ -487,10 +508,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
     private void initUi() {
         screenShot = (Button) findViewById(R.id.activity_main_screen_shot);
         screenShot.setSelected(false);
-        simulate=(Button)findViewById(R.id.activity_main_simulator);
-        simulate.setSelected(false);
         infoip = (TextView) findViewById(R.id.infoip);
-        msg = (TextView) findViewById(R.id.msg);
         titleTv = (TextView) findViewById(R.id.title_tv);
         imViewA = (ImageView) findViewById(R.id.imageViewA);
         videostreamPreviewTtView = (TextureView) findViewById(R.id.livestream_preview_ttv);
@@ -791,62 +809,7 @@ public class MainActivity extends Activity implements DJICodecManager.YuvDataCal
         if (v.getId() == R.id.activity_main_screen_shot) {
             handleYUVClick();
         }
-        if(v.getId()==R.id.activity_main_simulator){
-            onClickSimulator();
-        }
 
-    }
-    private void onClickSimulator() {
-        Simulator simulator = ModuleVerificationUtil.getSimulator();
-        if (simulator == null) {
-            return;
-        }
-        if (simulate.isSelected()) {
-            simulate.setText("Flight");
-            simulate.setSelected(false);
-
-            simulator.start(InitializationData.createInstance(new LocationCoordinate2D(23, 113), 10, 10),
-                    new CommonCallbacks.CompletionCallback() {
-                        @Override
-                        public void onResult(DJIError djiError) {
-                            JSONObject jsonError = new JSONObject();
-                            try {
-                                jsonError.put("error", djiError.getDescription());
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            socket.emit("newError", jsonError);
-                        }
-                    });
-            Boolean isSimulatorOn = (Boolean) KeyManager.getInstance().getValue(isSimulatorActived);
-            if (isSimulatorOn != null) {
-                JSONObject jsonSuccess = new JSONObject();
-                try {
-                    jsonSuccess.put("information", "Simulator is On.");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                socket.emit("newInformation", jsonSuccess);
-            }
-            else {
-                JSONObject jsonError = new JSONObject();
-                try {
-                    jsonError.put("error", "Simulator is Off.");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-                socket.emit("newError", jsonError);
-            }
-        } else {
-            simulate.setText("Simulate");
-            simulate.setSelected(true);
-            simulator.stop(new CommonCallbacks.CompletionCallback() {
-                @Override
-                public void onResult(DJIError djiError) {
-
-                }
-            });
-        }
     }
     private void handleYUVClick() {
         if (screenShot.isSelected()) {
