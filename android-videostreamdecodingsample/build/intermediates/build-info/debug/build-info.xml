@@ -6,23 +6,26 @@
     density="xhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1552021015222"
+    timestamp="1552060785763"
     token="-3401490903181781406"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="9895" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="159" />
     <task
         name="verifier"
-        duration="0" />
+        duration="133" />
 
+    <artifact
+        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
     <artifact
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\instant-run-apk\debug\android-videostreamdecodingsample-debug.apk"
         type="SPLIT_MAIN" />
@@ -45,9 +48,6 @@
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
@@ -62,8 +62,11 @@
 
     <build
         build-mode="FULL"
-        timestamp="1552021015222"
+        timestamp="1552060785763"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
         <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\instant-run-apk\debug\android-videostreamdecodingsample-debug.apk"
             type="SPLIT_MAIN" />
@@ -84,9 +87,6 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\homer\Desktop\tensorflow\tensorflow\examples\DJI-UAV\android-videostreamdecodingsample\build\intermediates\split-apk\debug\slices\slice_1.apk"

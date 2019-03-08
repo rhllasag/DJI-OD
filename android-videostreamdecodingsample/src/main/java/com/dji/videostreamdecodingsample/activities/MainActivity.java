@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
     private boolean isAdd = false;
     private final Map<Integer, Marker> mMarkers = new ConcurrentHashMap<Integer, Marker>();
     private Marker droneMarker = null;
-    private float altitude = 100.0f;
+    private float altitude = 10.0f;
     private float mSpeed = 10.0f;
     private List<Waypoint> waypointList = new ArrayList<>();
     public static WaypointMission.Builder waypointMissionBuilder;
@@ -400,8 +400,13 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         periodicalStateData.setAircraftLatitude((flightControllerState.getAircraftLocation().getLatitude()));
                         periodicalStateData.setAircraftLongitude((flightControllerState.getAircraftLocation().getLongitude()));
                         socket.emit("newCoordinates", coordinates);
+                        activity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                updateDroneLocation();
+                            }
+                        });
                     }
-
                 }
             });
         }
@@ -1238,7 +1243,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                     gMap.clear();
                     waypointList.clear();
                     waypointMissionBuilder.waypointList(waypointList);
-                    updateDroneLocation();
                     myAwesomeTextView.setText("clearWaypointsChanged");
                 }
             });
@@ -1251,8 +1255,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    myAwesomeTextView.setText("newAltitudeWaypointsChanged");
-
+                    altitude=Float.parseFloat(args[0].toString());
+                    myAwesomeTextView.setText(altitude+"");
                 }
             });
 
@@ -1264,8 +1268,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    mSpeed = 3.0f;
-                    myAwesomeTextView.setText("newSpeedWaypointsChanged");
+                    mSpeed=Float.parseFloat(args[0].toString());
+                    myAwesomeTextView.setText(mSpeed+"");
                 }
             });
 
@@ -1278,6 +1282,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                 @Override
                 public void run() {
                     myAwesomeTextView.setText("uploadWaypointsMissionChanged");
+                    configWayPointMission();
                     getWaypointMissionOperator().uploadMission(new CommonCallbacks.CompletionCallback() {
                         @Override
                         public void onResult(DJIError error) {
@@ -1301,7 +1306,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                 @Override
                 public void run() {
                     myAwesomeTextView.setText("startWaypointsMissionChanged");
-                    configWayPointMission();
                     startWaypointMission();
                 }
             });
@@ -1327,16 +1331,18 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    /**if (checkedId == R.id.finishNone){
+                    if(args[0].toString().compareTo("none")==0){
                         mFinishedAction = WaypointMissionFinishedAction.NO_ACTION;
-                    } else if (checkedId == R.id.finishGoHome){
-                        mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
-                    } else if (checkedId == R.id.finishAutoLanding){
+                    }
+                    if(args[0].toString().compareTo("auto_land")==0){
                         mFinishedAction = WaypointMissionFinishedAction.AUTO_LAND;
-                    } else if (checkedId == R.id.finishToFirst){
+                    }
+                    if(args[0].toString().compareTo("go_home")==0){
+                        mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
+                    }
+                    if(args[0].toString().compareTo("back_to_1st")==0){
                         mFinishedAction = WaypointMissionFinishedAction.GO_FIRST_WAYPOINT;
-                    }**/
-                    mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
+                    }
                     myAwesomeTextView.setText("actionAfterMissionChanged");
 
                 }
@@ -1350,16 +1356,18 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    /**if (checkedId == R.id.headingNext) {
+                    if(args[0].toString().compareTo("auto")==0){
                         mHeadingMode = WaypointMissionHeadingMode.AUTO;
-                    } else if (checkedId == R.id.headingInitDirec) {
+                    }
+                    if(args[0].toString().compareTo("initial")==0){
                         mHeadingMode = WaypointMissionHeadingMode.USING_INITIAL_DIRECTION;
-                    } else if (checkedId == R.id.headingRC) {
+                    }
+                    if(args[0].toString().compareTo("rc_control")==0){
                         mHeadingMode = WaypointMissionHeadingMode.CONTROL_BY_REMOTE_CONTROLLER;
-                    } else if (checkedId == R.id.headingWP) {
+                    }
+                    if(args[0].toString().compareTo("waypoints")==0){
                         mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
-                    }**/
-                    mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
+                    }
                     myAwesomeTextView.setText("headingChanged");
 
                 }
@@ -1442,11 +1450,11 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
     private void enableDisableAdd(){
         if (isAdd == false) {
             isAdd = true;
-            myAwesomeTextView.setText("Exit");
+            myAwesomeTextView.setText("Add ok");
 
         }else{
             isAdd = false;
-            myAwesomeTextView.setText("Add");
+            myAwesomeTextView.setText("Exit ok");
 
         }
     }
