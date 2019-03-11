@@ -243,8 +243,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         separator.setDecimalSeparator('.');
         formatHight = new DecimalFormat("00.0", separator);
         formatDistance = new DecimalFormat("00.00", separator);
-        formatLatitude = new DecimalFormat("00.00000", separator);
-        formatLongitude = new DecimalFormat("00.00000", separator);
+        formatLatitude = new DecimalFormat("00.000000", separator);
+        formatLongitude = new DecimalFormat("00.000000", separator);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

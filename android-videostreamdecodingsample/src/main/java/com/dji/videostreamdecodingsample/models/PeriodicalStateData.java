@@ -53,7 +53,7 @@ public class PeriodicalStateData {
         return false;
     }
     public boolean isSameAircraftLocation(double currentLatitude, double currentLongitude){
-         if(distanciaCoord(currentLatitude,currentLongitude,aircraftLatitude,aircraftLongitude)>0.005)
+         if(distanciaCoord(currentLatitude,currentLongitude,aircraftLatitude,aircraftLongitude)>0.001)
             return true;
         return false;
     }
