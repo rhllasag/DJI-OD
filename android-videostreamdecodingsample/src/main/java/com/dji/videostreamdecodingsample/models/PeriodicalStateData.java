@@ -1,6 +1,5 @@
 package com.dji.videostreamdecodingsample.models;
 
-import dji.common.model.LocationCoordinate2D;
 
 public class PeriodicalStateData {
     private int AircraftBattery=-1;
@@ -11,6 +10,25 @@ public class PeriodicalStateData {
     private int flightTime=-1;
     private boolean sensorBeingUsedFlightAssistant=false;
     private boolean firstReading=false;
+
+    public boolean isFirtsSetting() {
+        return firtsSetting;
+    }
+
+    public void setFirtsSetting(boolean firtsSetting) {
+        this.firtsSetting = firtsSetting;
+    }
+
+    private boolean firtsSetting=true;
+    public boolean isSmartRTHstate() {
+        return smartRTHstate;
+    }
+
+    public void setSmartRTHstate(boolean smartRTHstate) {
+        this.smartRTHstate = smartRTHstate;
+    }
+
+    private boolean smartRTHstate=true;
     private double homeLatitude;
     private double homeLongitude;
     private double aircraftLatitude;

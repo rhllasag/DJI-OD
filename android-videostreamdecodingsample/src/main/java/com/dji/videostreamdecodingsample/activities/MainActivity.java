@@ -269,6 +269,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         socket.on("endWaypointsMissionChanged",endWaypointsMissionChanged);
         socket.on("actionAfterMissionChanged",actionAfterMissionChanged);
         socket.on("headingChanged",headingChanged);
+        socket.on("smartRTHChanged",smartRTHChanged);
         socket.connect();
         periodicalStateData = new PeriodicalStateData();
         periodicalStateData.setFirstReading(true);
@@ -284,7 +285,15 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                        JSONObject jsonBatteryState = new JSONObject();
+                        try {
+                            jsonBatteryState.put("voltage", batteryState.getVoltage());
+                            jsonBatteryState.put("temperature", (int)batteryState.getTemperature());
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         socket.emit("newBatteryLevel", jsonBattery);
+                        socket.emit("newBatteryState", jsonBatteryState);
                     }
                     periodicalStateData.setAircraftBattery(batteryState.getChargeRemainingInPercent());
                 }
@@ -296,15 +305,34 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         }
         if (ModuleVerificationUtil.isFlightControllerAvailable()) {
             flightController =((Aircraft) DJIApplication.getProductInstance()).getFlightController();
-/*            simulator.setStateCallback(new SimulatorState.Callback() {
-                @Override
-                public void onUpdate(@NonNull SimulatorState simulatorState) {
-                    if(simulatorState.areMotorsOn())
-                        System.out.println("Motors On");
-                    else
-                        System.out.println("Motors Off");
-                }
-            });*/
+            if(periodicalStateData.isFirtsSetting()){
+                flightController.setSmartReturnToHomeEnabled(true, new CommonCallbacks.CompletionCallback() {
+                    @Override
+                    public void onResult(DJIError djiError) {
+                        if(djiError!=null)
+                        sendError("Enabling Smart Return to Home :"+ djiError.toString());
+                    }
+                });
+                periodicalStateData.setFirtsSetting(false);
+                flightController.getSmartReturnToHomeEnabled(new CommonCallbacks.CompletionCallbackWith<Boolean>() {
+                    @Override
+                    public void onSuccess(Boolean aBoolean) {
+                        JSONObject smartRTH = new JSONObject();
+                        try {
+                            smartRTH.put("value", aBoolean);
+                            periodicalStateData.setSmartRTHstate(aBoolean);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        socket.emit("newSmartRTH", smartRTH);
+                    }
+                    @Override
+                    public void onFailure(DJIError djiError) {
+                        if(djiError!=null)
+                        sendError("Smart Return to Home :"+ djiError.toString());
+                    }
+                });
+            }
             if(flightController.isFlightAssistantSupported()){
                 intelligentFlightAssistant=flightController.getFlightAssistant();
                 if (intelligentFlightAssistant != null) {
@@ -761,11 +789,11 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
     private void sendError(String message){
         JSONObject jsonError = new JSONObject();
         try {
-            jsonError.put("error", message);
+            jsonError.put("message", message);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        socket.emit("newError", jsonError);
+        socket.emit("newSystemStatus", jsonError);
     }
     private void showToast(String s) {
         Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
@@ -1288,8 +1316,10 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         public void onResult(DJIError error) {
                             if (error == null) {
                                 setResultToToast("Mission upload successfully!");
+                                sendError("Mission upload successfully!");
                             } else {
                                 setResultToToast("Mission upload failed, error: " + error.getDescription() + " retrying...");
+                                sendError("Mission upload failed: "+error.getDescription());
                                 getWaypointMissionOperator().retryUploadMission(null);
                             }
                         }
@@ -1470,6 +1500,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         getWaypointMissionOperator().startMission(new CommonCallbacks.CompletionCallback() {
             @Override
             public void onResult(DJIError error) {
+                sendError("Mission Start: " + (error == null ? "Successfully" : error.getDescription()));
                 setResultToToast("Mission Start: " + (error == null ? "Successfully" : error.getDescription()));
             }
         });
@@ -1505,18 +1536,54 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
 
         DJIError error = getWaypointMissionOperator().loadMission(waypointMissionBuilder.build());
         if (error == null) {
-            setResultToToast("loadWaypoint succeeded");
+            setResultToToast("Load Waypoints succeeded");
+            sendError("Load Waypoints succeeded");
         } else {
-            setResultToToast("loadWaypoint failed " + error.getDescription());
+            setResultToToast("Load Waypoints failed " + error.getDescription());
+            sendError("Load Waypoints failed " + error.getDescription());
         }
     }
     private void stopWaypointMission(){
         getWaypointMissionOperator().stopMission(new CommonCallbacks.CompletionCallback() {
             @Override
             public void onResult(DJIError error) {
+                    sendError("Mission Stop: " + (error == null ? "Successfully" : error.getDescription()));
                 setResultToToast("Mission Stop: " + (error == null ? "Successfully" : error.getDescription()));
             }
         });
 
     }
+    public Emitter.Listener smartRTHChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(args[0].toString().compareTo("true")==0&&!periodicalStateData.isSmartRTHstate()){
+                        flightController.setSmartReturnToHomeEnabled(true, new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null)
+                                sendError("Enabling Smart Return to Home :"+ djiError.toString());
+                            }
+                        });
+                        periodicalStateData.setSmartRTHstate(true);
+                    }
+                    if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
+                        flightController.setSmartReturnToHomeEnabled(false, new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null)
+                                sendError("Enabling Smart Return to Home :"+ djiError.toString());
+                            }
+                        });
+                        periodicalStateData.setSmartRTHstate(false);
+
+                    }
+
+                }
+            });
+
+        }
+    };
 }
