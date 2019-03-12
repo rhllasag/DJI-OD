@@ -1172,6 +1172,10 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                                     sendError(djiError.getDescription());
                                     myAwesomeTextView.setText(djiError.getDescription());
                                 }
+                                else{
+                                    periodicalStateData.setReturnToHomeCanceled(false);
+                                    periodicalStateData.setUrgentReturnToHomeCanceled(false);
+                                }
                             }
                         });
                     }
@@ -1670,18 +1674,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if(args[0].toString().compareTo("true")==0){
-                        if(flightController.getState().isFlying()){
-                            flightController.startGoHome(new CommonCallbacks.CompletionCallback() {
-                                @Override
-                                public void onResult(DJIError djiError) {
-                                }
-                            });
-                            sendError("Enable Smart Return to Home");
-                            periodicalStateData.setReturnToHomeCanceled(false);
-                            periodicalStateData.setUrgentReturnToHomeCanceled(false);
-                        }
-                    }
                     if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
 
                         sendError("Cancel Smart Return to Home");
