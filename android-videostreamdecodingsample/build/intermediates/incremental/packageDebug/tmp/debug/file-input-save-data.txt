@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 07 22:47:45 GMT 2019
+#Tue Mar 12 14:06:47 GMT 2019
 20.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 143.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 237.path=lib/arm64-v8a/libyuv2.so
@@ -192,7 +192,7 @@
 216.path=expansion/internal/areacode/ac/bi_w.txt
 250.baseType=DIRECTORY
 229.set=ASSET
-32.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+32.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\18
 249.path=expansion/internal/areacode/ac/wf_w.txt
 107.set=ASSET
 180.set=ASSET
@@ -204,7 +204,7 @@
 83.baseType=DIRECTORY
 310.path=expansion/internal/areacode/ac/co_w.txt
 125.baseType=DIRECTORY
-32.set=ASSET
+32.set=DEX
 153.baseType=DIRECTORY
 181.baseType=DIRECTORY
 172.path=expansion/internal/areacode/ac/sx_w.txt
@@ -308,7 +308,7 @@
 8.set=ASSET
 199.set=ASSET
 78.baseType=DIRECTORY
-29.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\20
+29.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 84.baseType=DIRECTORY
 126.baseType=DIRECTORY
 154.baseType=DIRECTORY
@@ -324,7 +324,7 @@
 109.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 221.path=expansion/internal/areacode/ac/jp_w.txt
 19.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-28.set=ASSET
+28.set=DEX
 230.set=ASSET
 18.baseType=DIRECTORY
 46.baseType=DIRECTORY
@@ -362,7 +362,7 @@
 13.set=ASSET
 278.baseType=DIRECTORY
 130.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-301.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+301.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 284.baseType=DIRECTORY
 292.set=ASSET
 257.path=expansion/internal/areacode/ac/pf_w.txt
@@ -438,7 +438,7 @@
 21.baseType=DIRECTORY
 203.set=ASSET
 158.set=NATIVE_RESOURCE
-32.path=expansion/internal/areacode/ac/cd_w.txt
+32.path=classes.dex
 241.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 197.path=expansion/internal/areacode/ac/do_w.txt
 104.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
@@ -537,7 +537,7 @@
 119.path=expansion/internal/areacode/ac/tr_w.txt
 205.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 173.set=ASSET
-29.path=classes.dex
+29.path=expansion/internal/areacode/ac/sd_w.txt
 238.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 25.set=ASSET
 213.path=expansion/internal/areacode/ac/aw_w.txt
@@ -569,7 +569,7 @@
 60.path=expansion/internal/areacode/ac/ao_w.txt
 192.path=expansion/internal/areacode/ac/mg_w.txt
 260.baseType=DIRECTORY
-33.set=DEX
+33.set=ASSET
 132.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 303.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 59.baseType=DIRECTORY
@@ -605,7 +605,7 @@
 55.baseType=DIRECTORY
 98.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 130.path=expansion/internal/areacode/ac/za_w.txt
-301.path=classes.dex
+301.path=expansion/internal/areacode/ac/bf_w.txt
 61.baseType=DIRECTORY
 40.path=expansion/internal/areacode/ac/mv_w.txt
 103.baseType=DIRECTORY
@@ -645,7 +645,7 @@
 287.baseType=DIRECTORY
 26.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 59.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-300.set=ASSET
+300.set=DEX
 210.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 223.set=ASSET
 34.path=flysafe/dji.nfzdb.confumix
@@ -684,7 +684,7 @@
 241.path=expansion/internal/areacode/ac/cl_w.txt
 177.set=ASSET
 104.path=expansion/internal/areacode/ac/cw_w.txt
-29.set=DEX
+29.set=ASSET
 137.path=expansion/internal/areacode/ac/ye_w.txt
 308.path=expansion/internal/areacode/ac/us_w.txt
 47.path=expansion/internal/areacode/ac/pa_w.txt
@@ -860,7 +860,7 @@
 144.set=ASSET
 118.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 189.set=ASSET
-28.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+28.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\20
 96.baseType=DIRECTORY
 320.set=ASSET
 138.baseType=DIRECTORY
@@ -917,7 +917,7 @@
 82.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 129.path=expansion/internal/areacode/ac/kh_w.txt
 4.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-300.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+300.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 282.set=NATIVE_RESOURCE
 256.path=expansion/internal/areacode/ac/dk_w.txt
 162.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
@@ -972,7 +972,7 @@
 93.path=expansion/internal/areacode/ac/tf_w.txt
 217.path=classes.dex
 239.set=ASSET
-33.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\dexMerger\\debug\\18
+33.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 117.set=ASSET
 37.baseType=DIRECTORY
 190.set=ASSET
@@ -1017,7 +1017,7 @@
 230.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 54.path=expansion/internal/areacode/city_list_w.txt
 50.set=NATIVE_RESOURCE
-301.set=DEX
+301.set=ASSET
 263.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 87.path=lib/armeabi-v7a/libudt.so
 297.baseType=DIRECTORY
@@ -1104,7 +1104,7 @@
 118.path=expansion/internal/areacode/ac/is_w.txt
 110.baseType=DIRECTORY
 204.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-28.path=expansion/internal/areacode/ac/sd_w.txt
+28.path=classes.dex
 237.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 15.set=ASSET
 294.set=NATIVE_RESOURCE
@@ -1164,7 +1164,7 @@ count=330
 54.set=ASSET
 305.set=ASSET
 97.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
-300.path=expansion/internal/areacode/ac/bf_w.txt
+300.path=classes.dex
 39.baseType=DIRECTORY
 67.baseType=DIRECTORY
 228.set=ASSET
@@ -1208,7 +1208,7 @@ count=330
 58.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 213.set=ASSET
 168.set=NATIVE_RESOURCE
-33.path=classes.dex
+33.path=expansion/internal/areacode/ac/cd_w.txt
 242.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 198.path=expansion/internal/areacode/ac/gg_w.txt
 105.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0

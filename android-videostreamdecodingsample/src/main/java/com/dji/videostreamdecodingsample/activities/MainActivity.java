@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Random;
 
 import com.dji.videostreamdecodingsample.R;
 import com.dji.videostreamdecodingsample.env.BorderedText;
@@ -234,6 +235,10 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
     private WaypointMissionOperator instance;
     private WaypointMissionFinishedAction mFinishedAction = WaypointMissionFinishedAction.GO_HOME;
     private WaypointMissionHeadingMode mHeadingMode = WaypointMissionHeadingMode.USING_WAYPOINT_HEADING;
+
+    /**Settings**/
+    Random ran = new Random();
+    final int value = ran.nextInt(16) + 30;
     @Override
     protected void onResume() {
         LOGGER.d("onResume " + this);
@@ -270,6 +275,9 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         socket.on("actionAfterMissionChanged",actionAfterMissionChanged);
         socket.on("headingChanged",headingChanged);
         socket.on("smartRTHChanged",smartRTHChanged);
+        socket.on("lowBatteryWarningThresholdChanged",lowBatteryWarningThresholdChanged);
+        socket.on("seriousLowBatteryWarningThresholdChanged",seriousLowBatteryWarningThresholdChanged);
+        socket.on("returnToHomeDesicionChanged",returnToHomeDesicionChanged);
         socket.connect();
         periodicalStateData = new PeriodicalStateData();
         periodicalStateData.setFirstReading(true);
@@ -310,7 +318,17 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                     @Override
                     public void onResult(DJIError djiError) {
                         if(djiError!=null)
-                        sendError("Enabling Smart Return to Home :"+ djiError.toString());
+                        sendError("Error Smart Return to Home :"+ djiError.toString());
+                        else{
+                            JSONObject smartRTH = new JSONObject();
+                            try {
+                                smartRTH.put("value", "true");
+                                periodicalStateData.setSmartRTHstate(true);
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            socket.emit("newSmartRTH", smartRTH);
+                        }
                     }
                 });
                 periodicalStateData.setFirtsSetting(false);
@@ -326,17 +344,17 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         }
                         socket.emit("newSmartRTH", smartRTH);
                     }
+
                     @Override
                     public void onFailure(DJIError djiError) {
                         if(djiError!=null)
-                        sendError("Smart Return to Home :"+ djiError.toString());
+                            sendError("Smart Return to Home :"+ djiError.toString());
                     }
                 });
             }
             if(flightController.isFlightAssistantSupported()){
                 intelligentFlightAssistant=flightController.getFlightAssistant();
                 if (intelligentFlightAssistant != null) {
-
                     intelligentFlightAssistant.setVisionDetectionStateUpdatedCallback(new VisionDetectionState.Callback() {
                         @Override
                         public void onUpdate(@NonNull VisionDetectionState visionDetectionState) {
@@ -370,6 +388,22 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                 @Override
                 public void onUpdate(@NonNull FlightControllerState flightControllerState) {
                     //Satelite Counts
+                    if(periodicalStateData.isSmartRTHstate()&&!flightControllerState.isGoingHome()&&flightControllerState.isFlying()){
+                        JSONObject jsonAirlink = new JSONObject();
+                        try {
+                            jsonAirlink.put("value", "true");
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        if(flightControllerState.isLowerThanSeriousBatteryWarningThreshold()&&periodicalStateData.isReturnToHomeCanceled())
+                        {
+                            socket.emit("newReturnToHomeQuestion", jsonAirlink);
+                        }
+                        else if(flightControllerState.isLowerThanBatteryWarningThreshold()&&periodicalStateData.isUrgentReturnToHomeCanceled()){
+                            socket.emit("newReturnToHomeQuestion", jsonAirlink);
+                        }
+                    }
                     if(periodicalStateData.getFlightControllerGPSSatelliteCount()!=flightControllerState.getSatelliteCount()) {
                         System.out.println("Flight Controller GPS:" + flightControllerState.getSatelliteCount());
                         JSONObject jsonAirlink = new JSONObject();
@@ -1230,6 +1264,10 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                                         myAwesomeTextView.setText(djiError.getDescription());
                                         sendError(djiError.getDescription());
                                     }
+                                    else {
+                                        periodicalStateData.setReturnToHomeCanceled(true);
+                                        periodicalStateData.setUrgentReturnToHomeCanceled(true);
+                                    }
                                 }
                             });
 
@@ -1568,6 +1606,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                             }
                         });
                         periodicalStateData.setSmartRTHstate(true);
+                        sendError("Enable Smart Return to Home");
                     }
                     if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
                         flightController.setSmartReturnToHomeEnabled(false, new CommonCallbacks.CompletionCallback() {
@@ -1578,12 +1617,78 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                             }
                         });
                         periodicalStateData.setSmartRTHstate(false);
-
+                        sendError("Disable Smart Return to Home");
                     }
 
                 }
             });
 
+        }
+    };
+    public Emitter.Listener lowBatteryWarningThresholdChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                        flightController.setLowBatteryWarningThreshold(Integer.parseInt(args[0].toString()), new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null)
+                                {
+                                    sendError(djiError.getDescription());
+                                }
+                            }
+                        });
+                }
+            });
+
+        }
+    };
+    public Emitter.Listener seriousLowBatteryWarningThresholdChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    flightController.setSeriousLowBatteryWarningThreshold(Integer.parseInt(args[0].toString()), new CommonCallbacks.CompletionCallback() {
+                        @Override
+                        public void onResult(DJIError djiError) {
+                            if(djiError!=null)
+                            {
+                                sendError(djiError.getDescription());
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    };
+    public Emitter.Listener returnToHomeDesicionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(args[0].toString().compareTo("true")==0){
+                        if(flightController.getState().isFlying()){
+                            flightController.startGoHome(new CommonCallbacks.CompletionCallback() {
+                                @Override
+                                public void onResult(DJIError djiError) {
+                                }
+                            });
+                            sendError("Enable Smart Return to Home");
+                            periodicalStateData.setReturnToHomeCanceled(false);
+                            periodicalStateData.setUrgentReturnToHomeCanceled(false);
+                        }
+                    }
+                    if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
+
+                        sendError("Cancel Smart Return to Home");
+                        periodicalStateData.setUrgentReturnToHomeCanceled(true);
+                    }
+                }
+            });
         }
     };
 }

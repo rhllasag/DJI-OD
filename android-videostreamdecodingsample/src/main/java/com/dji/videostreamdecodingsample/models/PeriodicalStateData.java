@@ -10,6 +10,29 @@ public class PeriodicalStateData {
     private int flightTime=-1;
     private boolean sensorBeingUsedFlightAssistant=false;
     private boolean firstReading=false;
+    private boolean smartRTHstate=true;
+    private double homeLatitude;
+    private double homeLongitude;
+    private double aircraftLatitude;
+    private double aircraftLongitude;
+    private boolean returnToHomeCanceled=true;
+
+    public boolean isUrgentReturnToHomeCanceled() {
+        return urgentReturnToHomeCanceled;
+    }
+
+    public void setUrgentReturnToHomeCanceled(boolean urgentReturnToHomeCanceled) {
+        this.urgentReturnToHomeCanceled = urgentReturnToHomeCanceled;
+    }
+
+    private boolean urgentReturnToHomeCanceled=true;
+    public boolean isReturnToHomeCanceled() {
+        return returnToHomeCanceled;
+    }
+
+    public void setReturnToHomeCanceled(boolean returnToHomeCalceled) {
+        this.returnToHomeCanceled = returnToHomeCalceled;
+    }
 
     public boolean isFirtsSetting() {
         return firtsSetting;
@@ -27,13 +50,6 @@ public class PeriodicalStateData {
     public void setSmartRTHstate(boolean smartRTHstate) {
         this.smartRTHstate = smartRTHstate;
     }
-
-    private boolean smartRTHstate=true;
-    private double homeLatitude;
-    private double homeLongitude;
-    private double aircraftLatitude;
-    private double aircraftLongitude;
-
     public double getAircraftLatitude() {
         return aircraftLatitude;
     }
@@ -49,7 +65,6 @@ public class PeriodicalStateData {
     public void setAircraftLongitude(double aircraftLongitude) {
         this.aircraftLongitude = aircraftLongitude;
     }
-
     public double getHomeLatitude() {
         return homeLatitude;
     }
