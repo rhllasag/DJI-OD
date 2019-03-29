@@ -159,7 +159,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                             Log.v(TAG, djiError.getDescription());
                             isRegistrationInProgress.set(false);
                         }
-
                         @Override
                         public void onProductChange(BaseProduct oldProduct, BaseProduct newProduct) {
                             Log.d(TAG, String.format("onProductChanged oldProduct:%s, newProduct:%s", oldProduct, newProduct));
@@ -315,6 +314,9 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (s != null && s.toString().contains("\n")) {
+                    Constants.ip = mServerText.getText().toString();
+                }
             }
 
             @Override

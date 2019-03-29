@@ -278,6 +278,12 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         socket.on("lowBatteryWarningThresholdChanged",lowBatteryWarningThresholdChanged);
         socket.on("seriousLowBatteryWarningThresholdChanged",seriousLowBatteryWarningThresholdChanged);
         socket.on("returnToHomeDesicionChanged",returnToHomeDesicionChanged);
+        socket.on("anticollisionChanged",anticollisionChanged);
+        socket.on("horizontalAnticollisionChanged",horizontalAnticollisionChanged);
+        socket.on("beginnerModeChanged",beginnerModeChanged);
+        socket.on("maximumAltitudeChanged",maximumAltitudeChanged);
+        socket.on("limitDistanceChanged",limitDistanceChanged);
+        socket.on("maximumFlightDistanceChanged",maximumFlightDistanceChanged);
         socket.connect();
         periodicalStateData = new PeriodicalStateData();
         periodicalStateData.setFirstReading(true);
@@ -360,7 +366,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         public void onUpdate(@NonNull VisionDetectionState visionDetectionState) {
                             //Sensors
                             if(periodicalStateData.isSensorBeingUsedFlightAssistant()!=visionDetectionState.isSensorBeingUsed()) {
-                                System.out.println("Flight Controller sensors:" + visionDetectionState.isSensorBeingUsed());
                                 JSONObject jsonSensorBeingUsed = new JSONObject();
                                 try {
                                     jsonSensorBeingUsed.put("sensorBeingUsed", visionDetectionState.isSensorBeingUsed());
@@ -375,9 +380,41 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                             visionDetectionState.getObstacleDistanceInMeters();
                         }
                     });
-                    intelligentFlightAssistant.setVisionControlStateUpdatedcallback(new VisionControlState.Callback() {
+
+                    intelligentFlightAssistant.getActiveObstacleAvoidanceEnabled(new CommonCallbacks.CompletionCallbackWith<Boolean>() {
                         @Override
-                        public void onUpdate(VisionControlState visionControlState) {
+                        public void onSuccess(Boolean aBoolean) {
+                            JSONObject jsonAnticollision = new JSONObject();
+                            try {
+                                jsonAnticollision.put("value", aBoolean+"");
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            socket.emit("newAnticollision", jsonAnticollision);
+                        }
+
+                        @Override
+                        public void onFailure(DJIError djiError) {
+
+                        }
+                    });
+                    intelligentFlightAssistant.getCollisionAvoidanceEnabled(new CommonCallbacks.CompletionCallbackWith<Boolean>() {
+                        @Override
+                        public void onSuccess(Boolean aBoolean) {
+                            JSONObject jsonAnticollision = new JSONObject();
+                            try {
+                                jsonAnticollision.put("value", aBoolean+"");
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            socket.emit("newHorizontalAnticollision", jsonAnticollision);
+                        }
+
+                        @Override
+                        public void onFailure(DJIError djiError) {
+
                         }
                     });
                 }
@@ -447,7 +484,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         try {
                             coordinates.put("latitude",formatLatitude.format(flightControllerState.getAircraftLocation().getLatitude()));
                             coordinates.put("longitude",formatLongitude.format(flightControllerState.getAircraftLocation().getLongitude()));
-                            coordinates.put("hight", formatHight.format(flightControllerState.getAircraftLocation().getAltitude()));
+                            coordinates.put("hight", flightControllerState.getAircraftLocation().getAltitude());
                             coordinates.put("distance",
                                     formatDistance.format(periodicalStateData.distanciaCoord(
                                             flightControllerState.getAircraftLocation().getLatitude(),
@@ -1523,11 +1560,12 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
         if (isAdd == false) {
             isAdd = true;
             myAwesomeTextView.setText("Add ok");
+            sendError("Able to add Waypoints");
 
         }else{
             isAdd = false;
             myAwesomeTextView.setText("Exit ok");
-
+            sendError("Waypoints deleted");
         }
     }
     public WaypointMissionOperator getWaypointMissionOperator() {
@@ -1601,7 +1639,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if(args[0].toString().compareTo("true")==0&&!periodicalStateData.isSmartRTHstate()){
+                    if(args[0].toString().compareTo("True")==0&&!periodicalStateData.isSmartRTHstate()){
                         flightController.setSmartReturnToHomeEnabled(true, new CommonCallbacks.CompletionCallback() {
                             @Override
                             public void onResult(DJIError djiError) {
@@ -1612,7 +1650,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         periodicalStateData.setSmartRTHstate(true);
                         sendError("Enable Smart Return to Home");
                     }
-                    if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
+                    if(args[0].toString().compareTo("False")==0&&periodicalStateData.isSmartRTHstate()){
                         flightController.setSmartReturnToHomeEnabled(false, new CommonCallbacks.CompletionCallback() {
                             @Override
                             public void onResult(DJIError djiError) {
@@ -1674,8 +1712,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if(args[0].toString().compareTo("false")==0&&periodicalStateData.isSmartRTHstate()){
-
+                    if(args[0].toString().compareTo("False")==0&&periodicalStateData.isSmartRTHstate()){
                         sendError("Cancel Smart Return to Home");
                         periodicalStateData.setUrgentReturnToHomeCanceled(true);
                     }
@@ -1683,4 +1720,140 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             });
         }
     };
+    public Emitter.Listener anticollisionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(flightController.isFlightAssistantSupported()) {
+                        boolean value=false;
+                        if(args[0].toString().compareTo("False")==0){
+                            value=false;
+                        }
+                        else if(args[0].toString().compareTo("True")==0){
+                            value=true;
+                        }
+                        showToast("Obstacle Avoidance:"+value);
+                        intelligentFlightAssistant.setActiveObstacleAvoidanceEnabled(value, new CommonCallbacks.CompletionCallback() {
+                                @Override
+                                public void onResult(DJIError djiError) {
+                                    if(djiError!=null){
+                                        sendError("Anticollision Error:"+djiError.getDescription());
+                                    }
+                                }
+                            });
+                    }
+
+                }
+            });
+        }
+    };
+    public Emitter.Listener horizontalAnticollisionChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(flightController.isFlightAssistantSupported()) {
+                        boolean value=false;
+                        if(args[0].toString().compareTo("False")==0){
+                            value=false;
+                        }
+                        else if(args[0].toString().compareTo("True")==0){
+                            value=true;
+                        }
+                        showToast("Collision Avoidance:"+value);
+                        intelligentFlightAssistant.setCollisionAvoidanceEnabled(value, new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null){
+                                    sendError("Anticollision Error:"+djiError.getDescription());
+                                }
+                            }
+                        });
+                    }
+
+                }
+            });
+        }
+    };
+    public Emitter.Listener beginnerModeChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mSpeed=8;
+                    sendError("Begineer mode flights missions at 8m/s");
+                }
+            });
+        }
+    };
+    public Emitter.Listener maximumAltitudeChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(flightController!=null)
+                    {
+                        flightController.setMaxFlightHeight(Integer.parseInt(args[0].toString()), new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null)
+                                sendError(djiError.getDescription());
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    };
+    public Emitter.Listener limitDistanceChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    boolean value=false;
+                    if(args[0].toString().compareTo("False")==0){
+                        value=false;
+                    }
+                    else if(args[0].toString().compareTo("True")==0){
+                        value=true;
+                    }
+                    showToast("Obstacle Avoidance:"+value);
+                    flightController.setMaxFlightRadiusLimitationEnabled(value, new CommonCallbacks.CompletionCallback() {
+                        @Override
+                        public void onResult(DJIError djiError) {
+                            if(djiError!=null)
+                            sendError(djiError.getDescription());
+                        }
+                    });
+                }
+            });
+        }
+    };
+    public Emitter.Listener maximumFlightDistanceChanged = new Emitter.Listener() {
+        @Override
+        public void call(final Object... args) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(flightController!=null)
+                    {
+                        flightController.setMaxFlightRadius(Integer.parseInt(args[0].toString()), new CommonCallbacks.CompletionCallback() {
+                            @Override
+                            public void onResult(DJIError djiError) {
+                                if(djiError!=null)
+                                    sendError(djiError.getDescription());
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    };
+
 }
