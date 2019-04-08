@@ -19,13 +19,6 @@ public class DJIApplication extends Application {
     // Web Sockets IO//
     private static DJIApplication instance;
     private Socket mSocket;
-    {
-        try {
-            mSocket = IO.socket(Constants.CHAT_SERVER_URL);
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
-    }
     @Override
     public void onCreate() {
         super.onCreate();
@@ -80,6 +73,11 @@ public class DJIApplication extends Application {
     }
 
     public Socket getSocket() {
+        try {
+            mSocket = IO.socket("http://"+Constants.ip+":"+Constants.IP_SERVER_PORT);
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
         return mSocket;
     }
     // DJI Mobile SDK

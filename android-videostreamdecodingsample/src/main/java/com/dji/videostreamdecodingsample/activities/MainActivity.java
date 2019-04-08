@@ -1067,7 +1067,6 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
 
             final List<Classifier.Recognition> mappedRecognitions =
                     new LinkedList<Classifier.Recognition>();
-
             for (final Classifier.Recognition result : results) {
                 final RectF location = result.getLocation();
                 if (location != null && result.getConfidence() >= minimumConfidence && result.getTitle().contains("person")) {
@@ -1079,7 +1078,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
             }
             mFrames =new ByteArrayOutputStream();
             cropCopyBitmap.compress(Bitmap.CompressFormat.JPEG, Constants.qualityBitmaps, mFrames);
-            imViewA.setImageBitmap(cropCopyBitmap);
+            //imViewA.setImageBitmap(cropCopyBitmap);
+            socket.emit("enableReading","{event:true}");
             outputTimeMS=System.currentTimeMillis();
             timesTampNeeded=outputTimeMS-incomingTimeMs;
             computingDetection = false;
@@ -1282,6 +1282,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                     }
                     else {
                         myAwesomeTextView.setText("FlightController not available Landing");
+                        sendError("FlightController not available Landing");
                     }
 
                 }
@@ -1314,7 +1315,8 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
 
                         }
                         else{
-                            myAwesomeTextView.setText(" TakeOff, but is flying");
+                            myAwesomeTextView.setText("TakeOff, but is flying");
+                            sendError("Aircraft is already flying");
                         }
 
                     }
@@ -1734,6 +1736,7 @@ public class MainActivity extends AppCompatActivity implements DJICodecManager.Y
                         else if(args[0].toString().compareTo("True")==0){
                             value=true;
                         }
+                        showToast("Server Connected");
                         showToast("Obstacle Avoidance:"+value);
                         intelligentFlightAssistant.setActiveObstacleAvoidanceEnabled(value, new CommonCallbacks.CompletionCallback() {
                                 @Override

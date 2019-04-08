@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Mar 12 14:06:47 GMT 2019
+#Sat Apr 06 23:22:03 BST 2019
 20.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 143.base=C\:\\Users\\homer\\Desktop\\tensorflow\\tensorflow\\examples\\DJI-UAV\\android-videostreamdecodingsample\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
 237.path=lib/arm64-v8a/libyuv2.so

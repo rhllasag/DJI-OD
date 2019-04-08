@@ -300,8 +300,8 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                 if (s != null && s.toString().contains("\n")) {
                     // the user is done typing.
                     // remove new line characcter
-                    final String currentText = mServerText.getText().toString();
-                    mServerText.setText(currentText.substring(0, currentText.indexOf('\n')));
+                    final String currentText = mBridgeModeEditText.getText().toString();
+                    mBridgeModeEditText.setText(currentText.substring(0, currentText.indexOf('\n')));
                     handleBridgeIPTextChange();
                 }
             }
@@ -314,15 +314,15 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s != null && s.toString().contains("\n")) {
-                    Constants.ip = mServerText.getText().toString();
-                }
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
                 if (s != null && s.toString().contains("\n")) {
-                    Constants.ip = mServerText.getText().toString();
+                    final String currentText = mServerText.getText().toString();
+                    mServerText.setText(currentText.substring(0, currentText.indexOf('\n')));
+                    handleServerIPTextChange();
                 }
             }
         });
